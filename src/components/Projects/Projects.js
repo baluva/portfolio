@@ -39,7 +39,7 @@ function Projects() {
               isBlog={false}
               title="Prédiction d'Attaque Cardiaque"
               description="Application de Machine Learning pour prédire le risque d'attaque cardiaque. Développée en Python, cet outil d'analyse santé utilise les données patient (âge, cholestérol, pression artérielle, IMC et facteurs de style de vie) pour évaluer le risque cardiovasculaire. Interface intuitive en mode sombre avec prédictions en temps réel et scoring ROC-AUC."
-              ghLink="https://github.com/lucabarb/heart_attack_Prediction"
+              ghLink="https://github.com/baluva/heart_attack_Prediction"
             />
           </Col>
 
@@ -79,7 +79,7 @@ function Projects() {
               isBlog={false}
               title="Insight Hub - Analyse de la Dépression Étudiante"
               description="Plateforme d'analyse et de prédiction de la dépression chez les étudiants basée sur un dataset de 100 000 entrées. Exploration des facteurs de style de vie (sommeil, GPA, heures d'étude) via un dashboard interactif (Plotly.js & Tailwind CSS) et un modèle de régression logistique pour la prédiction en temps réel."
-              ghLink="https://github.com/lucabarb/student_depression"
+              ghLink="https://github.com/baluva/student_depression"
             />
           </Col>
 
@@ -89,7 +89,7 @@ function Projects() {
               isBlog={false}
               title="Crypto Vision - Trading avec IA"
               description="Application de trading assistée par IA pour l'analyse et la prédiction des marchés crypto. Intègre des indicateurs techniques avancés et des modèles de machine learning pour fournir des signaux de trading (Achat/Vente/Neutre). Visualisation interactive des données avec des graphiques en chandelier et support de plusieurs paires de devises."
-              ghLink="https://github.com/lucabarb/Trade-with-AI"
+              ghLink="https://github.com/baluva/Trade-with-AI"
             />
           </Col>
         </Row>
