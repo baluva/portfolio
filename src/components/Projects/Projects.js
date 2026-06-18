@@ -8,6 +8,7 @@ import segmentationClient from "../../Assets/Projects/spotifapi.png";
 import gestionStock from "../../Assets/Projects/boutique.png";
 import insightHub from "../../Assets/Projects/insight_hub.png";
 import tradeWithAI from "../../Assets/Projects/trade_with_ai.png";
+import dbugHunter from "../../Assets/Projects/dbug_hunter.png";
 
 function Projects() {
   return (
@@ -21,6 +22,17 @@ function Projects() {
           Voici quelques-uns de mes projets récents en IA & Data Science
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={6} className="project-card">
+            <ProjectCard
+              imgPath={dbugHunter}
+              isBlog={false}
+              title="DBug Hunter - Détecteur de Bugs SQL"
+              description="Application web Python (FastAPI) qui analyse une base de données SQLite et détecte automatiquement les bugs : intégrité référentielle rompue, doublons, types de données incohérents, e-mails et dates invalides, valeurs aberrantes et problèmes de schéma. Rapport classé par gravité avec un score de santé sur 100, interface glisser-déposer et démo en ligne déployée via Docker sur Hugging Face."
+              ghLink="https://github.com/baluva/dbug-hunter"
+              demoLink="https://louey9999-dbug-hunter.hf.space"
+            />
+          </Col>
+
           <Col md={6} className="project-card">
             <ProjectCard
               imgPath={heartAttack}
