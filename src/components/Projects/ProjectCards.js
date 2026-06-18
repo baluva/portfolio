@@ -18,7 +18,11 @@ function ProjectCards(props) {
         {props.ghLink && (
           <Button variant="primary" href={props.ghLink} target="_blank">
             <BsGithub /> &nbsp;
-            {props.isBlog ? "Blog" : "GitHub"}
+            {props.isBlog
+              ? "Blog"
+              : props.ghLink.includes("gitlab")
+              ? "GitLab"
+              : "GitHub"}
           </Button>
         )}
 
