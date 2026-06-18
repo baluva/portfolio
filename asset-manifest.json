@@ -1,29 +1,38 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.1ecac08c.css",
-    "main.js": "/portfolio/static/js/main.7ea01336.js",
+    "main.js": "/portfolio/static/js/main.fe64dc3a.js",
     "static/js/415.4d6acbeb.chunk.js": "/portfolio/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/CV_Louey_Barbirou.pdf": "/portfolio/static/media/CV_Louey_Barbirou.c8da2eb62f18300b180d.pdf",
     "static/media/trade_with_ai.png": "/portfolio/static/media/trade_with_ai.6632206d87aae806dfde.png",
     "static/media/spotifapi.png": "/portfolio/static/media/spotifapi.a966e1bc093d4c5e3b6d.png",
     "static/media/dbug_hunter.png": "/portfolio/static/media/dbug_hunter.26bca6bf987c5f782ffc.png",
     "static/media/messi_analytics.png": "/portfolio/static/media/messi_analytics.dda6507d4e0435811011.png",
-    "static/media/CV_Louey_Barbirou.pdf": "/portfolio/static/media/CV_Louey_Barbirou.5b7ce5deb6c9b2a2ba33.pdf",
     "static/media/insight_hub.png": "/portfolio/static/media/insight_hub.b1e1673b115043b5b0a7.png",
     "static/media/home-main.svg": "/portfolio/static/media/home-main.359935c39288e92d4dba5c9f2445b91d.svg",
     "static/media/about.png": "/portfolio/static/media/about.aee0f771fbfc1e7b8fa8.png",
     "static/media/heart_attack.png": "/portfolio/static/media/heart_attack.132a80430bcc4a047cb8.png",
     "static/media/home-bg.jpg": "/portfolio/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
-    "static/media/boutique.png": "/portfolio/static/media/boutique.ab35b03dccd350a59a76.png",
     "static/media/pre.svg": "/portfolio/static/media/pre.4410c5baaa673cc131da.svg",
     "index.html": "/portfolio/index.html",
+    "static/media/puissance4.svg": "/portfolio/static/media/puissance4.18c302faf0b8b0ff8b31a1f535a59a65.svg",
+    "static/media/obesity_eda.svg": "/portfolio/static/media/obesity_eda.4f1c8045134a1087f4840438dbeac678.svg",
+    "static/media/red_rpg.svg": "/portfolio/static/media/red_rpg.5faadca137243f78d8e3abbd161c04f8.svg",
+    "static/media/swarm_prediction.svg": "/portfolio/static/media/swarm_prediction.d750f1b5704e42b8c8149cf1b89f31e2.svg",
+    "static/media/crypto_tracker.svg": "/portfolio/static/media/crypto_tracker.eab3fb019a5e3fd524cfa1be65add310.svg",
+    "static/media/ytech_docbase.svg": "/portfolio/static/media/ytech_docbase.544d6be50a2e00d9c81030c9175ad409.svg",
+    "static/media/videoinsight.svg": "/portfolio/static/media/videoinsight.89f136aaafba84daf8e961424a13d28b.svg",
+    "static/media/olist.svg": "/portfolio/static/media/olist.c44399dd9b42047f78a473c146e2bdb7.svg",
+    "static/media/bac_quiz.svg": "/portfolio/static/media/bac_quiz.d28230ced6cbdcfe7a18a98cb184e396.svg",
+    "static/media/ymmersion_web.svg": "/portfolio/static/media/ymmersion_web.93f2c98ee59e86393ca29971127270c9.svg",
     "main.1ecac08c.css.map": "/portfolio/static/css/main.1ecac08c.css.map",
-    "main.7ea01336.js.map": "/portfolio/static/js/main.7ea01336.js.map",
+    "main.fe64dc3a.js.map": "/portfolio/static/js/main.fe64dc3a.js.map",
     "415.4d6acbeb.chunk.js.map": "/portfolio/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1ecac08c.css",
-    "static/js/main.7ea01336.js"
+    "static/js/main.fe64dc3a.js"
   ]
 }
