@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.4a153b39.css",
-    "main.js": "/portfolio/static/js/main.ee8cd212.js",
+    "main.js": "/portfolio/static/js/main.ee62642b.js",
     "static/js/415.4d6acbeb.chunk.js": "/portfolio/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/CV_Louey_Barbirou.pdf": "/portfolio/static/media/CV_Louey_Barbirou.c8da2eb62f18300b180d.pdf",
@@ -27,12 +27,12 @@
     "static/media/bac_quiz.svg": "/portfolio/static/media/bac_quiz.315edaf4eb4f923c4a4553ed1e074c64.svg",
     "static/media/ymmersion_web.svg": "/portfolio/static/media/ymmersion_web.195494298c1d69c0b218668fcc07ccdb.svg",
     "main.4a153b39.css.map": "/portfolio/static/css/main.4a153b39.css.map",
-    "main.ee8cd212.js.map": "/portfolio/static/js/main.ee8cd212.js.map",
+    "main.ee62642b.js.map": "/portfolio/static/js/main.ee62642b.js.map",
     "415.4d6acbeb.chunk.js.map": "/portfolio/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4a153b39.css",
-    "static/js/main.ee8cd212.js"
+    "static/js/main.ee62642b.js"
   ]
 }
