@@ -6,85 +6,58 @@ function Particle() {
     <Particles
       id="tsparticles"
       params={{
+        fpsLimit: 60,
         particles: {
           number: {
-            value: 100,
+            value: 26,
             density: {
               enable: true,
-              value_area: 800,
+              value_area: 900,
             },
           },
           color: {
-            value: ["#00f3ff", "#bf00ff", "#ff00e5"],
+            value: ["#c4f24e", "#ffffff"],
           },
           shape: {
             type: "circle",
           },
           opacity: {
-            value: 0.6,
+            value: 0.18,
             random: true,
             anim: {
               enable: true,
-              speed: 1,
-              opacity_min: 0.1,
+              speed: 0.5,
+              opacity_min: 0.04,
               sync: false,
             },
           },
           size: {
-            value: 3,
+            value: 2,
             random: true,
-            anim: {
-              enable: true,
-              speed: 2,
-              size_min: 0.3,
-              sync: false,
-            },
           },
           line_linked: {
-            enable: true,
-            distance: 150,
-            color: "#00f3ff",
-            opacity: 0.4,
-            width: 1,
+            enable: false,
           },
           move: {
             enable: true,
-            speed: 1.5,
+            speed: 0.45,
             direction: "none",
             random: true,
             straight: false,
             out_mode: "out",
             bounce: false,
-            attract: {
-              enable: true,
-              rotateX: 600,
-              rotateY: 1200,
-            },
           },
         },
         interactivity: {
           detect_on: "canvas",
           events: {
             onhover: {
-              enable: true,
-              mode: "grab",
+              enable: false,
             },
             onclick: {
-              enable: true,
-              mode: "push",
+              enable: false,
             },
             resize: true,
-          },
-          modes: {
-            grab: {
-              distance: 200,
-              line_linked: {
-                opacity: 0.8,
-              },
-            },
-            push: {
-              particles_nb: 4,
-            },
           },
         },
         retina_detect: true,
