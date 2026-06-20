@@ -44,7 +44,7 @@ function Projects() {
               imgPath={supplyPulse}
               isBlog={false}
               title="SupplyPulse — Supply Chain Analytics"
-              description="Plateforme d'analytics supply chain & finance construite sur 180 519 commandes réelles (dataset DataCo). Pipeline de données SQL en couches avec DuckDB (syntaxe compatible BigQuery) : du brut au staging puis aux marts, une couche de gouvernance (dictionnaire de données + tests qualité automatisés exploitables en CI), et un dashboard décisionnel interactif (Streamlit). KPIs : taux de retard de livraison, OTIF, marge, performance par marché et mode d'expédition — révélant que 55 % des livraisons sont en retard."
+              description="Mon projet data le plus poussé. J'ai pris 180 000 commandes réelles (dataset DataCo) pour analyser une chaîne logistique de bout en bout. J'ai monté un entrepôt en couches avec DuckDB (du brut aux tables prêtes à l'analyse), ajouté des tests de qualité des données qui tournent en CI, et un dashboard Streamlit avec les bons KPIs (retards, OTIF, marge, performance par marché). Résultat qui parle : 55 % des livraisons arrivent en retard."
               ghLink="https://github.com/baluva/supplypulse"
             />
           </Col>
@@ -54,7 +54,7 @@ function Projects() {
               imgPath={promptBooster}
               isBlog={false}
               title="Prompt Booster — Optimiseur de Prompts IA"
-              description="Application web qui restructure un prompt brut selon les bonnes pratiques (rôle, contexte, format de sortie, contraintes, raisonnement étape par étape) pour que l'IA comprenne mieux la demande. Moteur 100 % Python à base de règles — sans clé API, hors-ligne — avec détection automatique de la tâche et de la langue, et un score qualité avant/après. Interface web sur-mesure en Streamlit."
+              description="Tu colles un prompt écrit vite fait, l'appli le réécrit proprement (rôle, contexte, format attendu, contraintes) pour que l'IA comprenne mieux ta demande. Tout est en Python, à base de règles : pas de clé API, ça marche hors-ligne. Ça repère le type de tâche et la langue, et ça note la qualité avant / après. Interface en Streamlit."
               ghLink="https://github.com/baluva/prompt-booster"
               demoLink="https://prompt-booster.streamlit.app"
             />
@@ -65,7 +65,7 @@ function Projects() {
               imgPath={dbugHunter}
               isBlog={false}
               title="DBug Hunter — Détecteur de Bugs SQL"
-              description="Application web Python (FastAPI) qui analyse une base SQLite et détecte automatiquement les problèmes : intégrité référentielle, doublons, types incohérents, e-mails/dates invalides, valeurs aberrantes. Rapport classé par gravité avec score de santé sur 100, interface glisser-déposer et démo en ligne déployée via Docker sur Hugging Face."
+              description="Tu déposes une base SQLite et l'outil (Python / FastAPI) la passe au peigne fin : doublons, clés cassées, types incohérents, e-mails et dates invalides, valeurs aberrantes. Il sort un rapport trié par gravité avec une note de santé sur 100. Déployé avec Docker sur Hugging Face."
               ghLink="https://github.com/baluva/dbug-hunter"
               demoLink="https://louey9999-dbug-hunter.hf.space"
             />
@@ -76,7 +76,7 @@ function Projects() {
               imgPath={videoInsight}
               isBlog={false}
               title="VideoInsight — Analyse Vidéo IA"
-              description="Module d'analyse vidéo intelligente développé en stage : transcription audio (Whisper), traduction, génération de sous-titres et synthèse vocale (TTS). Pipeline Python avec intégration continue (GitHub Actions) et architecture modulaire."
+              description="Ce que je développe en stage chez trITon : une appli qui prend une vidéo, la transcrit (Whisper), la traduit, génère les sous-titres et refait la voix (TTS). Pipeline en Python, avec de la CI sur GitHub Actions."
               ghLink="https://github.com/baluva/subtitles"
             />
           </Col>
@@ -86,7 +86,7 @@ function Projects() {
               imgPath={heartAttack}
               isBlog={false}
               title="Prédiction d'Attaque Cardiaque"
-              description="Application de Machine Learning prédisant le risque d'attaque cardiaque à partir de données cliniques et de style de vie (âge, cholestérol, pression, IMC). Pipeline ML complet (prétraitement, scaling, entraînement), interface en mode sombre et scoring ROC-AUC."
+              description="Un modèle qui estime le risque d'attaque cardiaque à partir de données cliniques et de mode de vie (âge, cholestérol, tension, IMC). J'ai fait toute la chaîne : nettoyage, mise à l'échelle, entraînement, puis évaluation au ROC-AUC."
               ghLink="https://github.com/baluva/heart_attack_Prediction"
             />
           </Col>
@@ -96,7 +96,7 @@ function Projects() {
               imgPath={insightHub}
               isBlog={false}
               title="Insight Hub — Dépression Étudiante"
-              description="Plateforme d'analyse et de prédiction de la dépression étudiante sur un dataset de 100 000 entrées. Exploration des facteurs (sommeil, GPA, heures d'étude) via un dashboard interactif (Plotly.js & Tailwind) et un modèle de régression logistique pour la prédiction en temps réel."
+              description="Analyse de la dépression étudiante sur 100 000 entrées : j'ai creusé les facteurs (sommeil, moyenne, heures d'étude) dans un dashboard interactif (Plotly + Tailwind), avec un modèle de régression logistique pour faire la prédiction."
               ghLink="https://github.com/baluva/student_depression"
             />
           </Col>
@@ -106,7 +106,7 @@ function Projects() {
               imgPath={tradeWithAI}
               isBlog={false}
               title="Trade With AI — Vision Crypto"
-              description="Outil de prédiction des marchés crypto basé sur les mathématiques et les séries temporelles (Prophet). Signaux de trading (Achat/Vente/Neutre), indicateurs techniques et visualisation interactive en chandeliers via une API Python (FastAPI)."
+              description="Un outil qui essaie de prévoir les cours crypto avec des séries temporelles (Prophet) : il sort des signaux achat / vente / neutre, des indicateurs techniques et des graphiques en chandeliers, le tout servi par une API Python (FastAPI)."
               ghLink="https://github.com/baluva/Trade-with-AI"
             />
           </Col>
@@ -136,7 +136,7 @@ function Projects() {
               imgPath={olist}
               isBlog={false}
               title="Dashboard Olist — Business Intelligence"
-              description="Tableau de bord décisionnel sur les données e-commerce brésiliennes Olist, construit avec Apache Superset. Modélisation SQL, indicateurs de vente, délais de livraison et satisfaction client ; restitution évaluée sur les principes de dataviz de Few et Tufte."
+              description="Tableau de bord sur les ventes e-commerce d'Olist (Brésil), fait avec Apache Superset : modélisation SQL, indicateurs de vente, délais de livraison, satisfaction client. Projet noté sur les principes de dataviz de Few et Tufte."
             />
           </Col>
 
@@ -155,7 +155,7 @@ function Projects() {
               imgPath={bacQuiz}
               isBlog={false}
               title="Bac Quiz — App Mobile de Révision"
-              description="Application mobile de QCM pour le bac tunisien. Pipeline Python convertissant des sujets PDF en JSON grâce à une IA multimodale (vision), back-end Supabase et application développée avec Expo / React Native."
+              description="App mobile de QCM pour le bac tunisien. Un script Python transforme les sujets PDF en questions (via une IA vision), avec Supabase derrière et l'appli en Expo / React Native."
             />
           </Col>
         </Row>
