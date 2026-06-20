@@ -31,6 +31,9 @@ function Home2() {
               , avec une expérience pratique en analyse de sécurité chez Thales et en business intelligence chez Novogel.
               <br />
               <br />
+              Je suis en <b className="purple">stage (4 mois) chez trITon</b>, où je développe <i>VideoInsight</i> (analyse vidéo par IA) et où je travaille sur la préparation et l'analyse des données.
+              <br />
+              <br />
               Je suis actuellement à la recherche d'une <b className="purple">alternance</b> où je pourrai appliquer mes compétences analytiques et continuer à évoluer dans le domaine de l'IA et de l'innovation data-driven.
             </p>
           </Col>

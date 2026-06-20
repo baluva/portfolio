@@ -6,44 +6,59 @@ import {
   SiNumpy,
   SiScikitlearn,
   SiTensorflow,
+  SiPytorch,
   SiJupyter,
   SiR,
+  SiPlotly,
+  SiPostgresql,
+  SiMongodb,
+  SiSupabase,
+  SiDuckdb,
+  SiDocker,
+  SiGit,
+  SiLinux,
+  SiFastapi,
+  SiStreamlit,
+  SiGo,
+  SiJavascript,
+  SiCsharp,
 } from "react-icons/si";
+
+const STACK = [
+  { icon: <DiPython />, label: "Python" },
+  { icon: <SiR />, label: "R" },
+  { icon: <SiGo />, label: "Go" },
+  { icon: <SiJavascript />, label: "JavaScript" },
+  { icon: <SiCsharp />, label: "C#" },
+  { icon: <SiPandas />, label: "Pandas" },
+  { icon: <SiNumpy />, label: "NumPy" },
+  { icon: <SiScikitlearn />, label: "Scikit-learn" },
+  { icon: <SiTensorflow />, label: "TensorFlow" },
+  { icon: <SiPytorch />, label: "PyTorch" },
+  { icon: <SiPlotly />, label: "Plotly" },
+  { icon: <SiJupyter />, label: "Jupyter" },
+  { icon: <SiPostgresql />, label: "PostgreSQL" },
+  { icon: <SiDuckdb />, label: "DuckDB" },
+  { icon: <SiMongodb />, label: "MongoDB" },
+  { icon: <SiSupabase />, label: "Supabase" },
+  { icon: <SiFastapi />, label: "FastAPI" },
+  { icon: <SiStreamlit />, label: "Streamlit" },
+  { icon: <SiDocker />, label: "Docker" },
+  { icon: <SiGit />, label: "Git" },
+  { icon: <SiLinux />, label: "Linux" },
+];
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
-        <p style={{ fontSize: "0.3em", marginTop: "10px" }}>Python</p>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiR />
-        <p style={{ fontSize: "0.3em", marginTop: "10px" }}>R</p>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPandas />
-        <p style={{ fontSize: "0.3em", marginTop: "10px" }}>Pandas</p>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiNumpy />
-        <p style={{ fontSize: "0.3em", marginTop: "10px" }}>NumPy</p>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiScikitlearn />
-        <p style={{ fontSize: "0.3em", marginTop: "10px" }}>Scikit-learn</p>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiTensorflow />
-        <p style={{ fontSize: "0.3em", marginTop: "10px" }}>TensorFlow</p>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiJupyter />
-        <p style={{ fontSize: "0.3em", marginTop: "10px" }}>Jupyter</p>
-      </Col>
+      {STACK.map(({ icon, label }) => (
+        <Col xs={4} md={2} className="tech-icons" key={label}>
+          {icon}
+          <p style={{ fontSize: "0.3em", marginTop: "10px" }}>{label}</p>
+        </Col>
+      ))}
     </Row>
   );
 }
 
 export default Techstack;
-
