@@ -36,8 +36,8 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <h1 className="heading-name">
-          <strong className="main-name">LB</strong>.
+        <h1 className="heading-name" style={{ fontSize: "1.7em", margin: 0 }}>
+          <strong className="main-name">louey</strong>
         </h1>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"

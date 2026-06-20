@@ -2,6 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/profile.jpg";
 import Tilt from "react-parallax-tilt";
+import { AiFillGithub } from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
   return (
@@ -56,56 +58,49 @@ function Home2() {
             </Tilt>
           </Col>
         </Row>
-        {/* <Row>
+        <Row>
           <Col md={12} className="home-about-social">
-            <h1>TROUVEZ-MOI SUR</h1>
+            <h1>OÙ ME TROUVER</h1>
             <p>
-              N'hésitez pas à <span className="purple">me contacter </span> 
+              N'hésite pas à <span className="purple">me contacter</span> ou à parcourir mon code
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/"
+                  href="https://github.com/baluva"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
+                  aria-label="GitHub"
                 >
                   <AiFillGithub />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in//"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <FaLinkedinIn /> 
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/"
+                  href="https://www.linkedin.com/in/louey-barbirou-2b97a828b/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
+                  aria-label="LinkedIn"
                 >
-                  <AiFillInstagram />
+                  <FaLinkedinIn />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://huggingface.co/louey9999"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                  aria-label="Hugging Face"
+                >
+                  <span role="img" aria-label="Hugging Face" style={{ fontSize: "0.95em" }}>🤗</span>
                 </a>
               </li>
             </ul>
           </Col>
-        </Row> */}
+        </Row>
       </Container>
     </Container>
   );

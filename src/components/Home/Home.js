@@ -21,15 +21,15 @@ function Home() {
               </h1>
 
               <h1 className="heading-name">
-                Je suis
-                <strong className="main-name floating-element"> Louey Barbirou</strong>
+                Moi c'est
+                <strong className="main-name"> louey</strong>
               </h1>
 
-              <h2 style={{ fontSize: "1.8em", color: "var(--color-neon-purple)", paddingLeft: "50px", marginTop: "20px" }}>
-                IA & Data Futur
+              <h2 style={{ fontSize: "1.25em", color: "var(--muted)", marginTop: "16px", fontWeight: 500 }}>
+                Louey Barbirou — Étudiant IA &amp; Data Science, Ynov B3
               </h2>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
+              <div style={{ paddingTop: 28, textAlign: "left" }}>
                 <Type />
               </div>
             </Col>

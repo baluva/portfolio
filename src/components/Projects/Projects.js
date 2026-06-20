@@ -8,6 +8,7 @@ import spotifApi from "../../Assets/Projects/spotifapi.png";
 import insightHub from "../../Assets/Projects/insight_hub.png";
 import tradeWithAI from "../../Assets/Projects/trade_with_ai.png";
 import dbugHunter from "../../Assets/Projects/dbug_hunter.png";
+import promptBooster from "../../Assets/Projects/prompt_booster.png";
 import videoInsight from "../../Assets/Projects/videoinsight.svg";
 import obesityEda from "../../Assets/Projects/obesity_eda.svg";
 import puissance4 from "../../Assets/Projects/puissance4.svg";
@@ -37,6 +38,17 @@ function Projects() {
           IA &amp; Data Science
         </h3>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={promptBooster}
+              isBlog={false}
+              title="Prompt Booster — Optimiseur de Prompts IA"
+              description="Application web qui restructure un prompt brut selon les bonnes pratiques (rôle, contexte, format de sortie, contraintes, raisonnement étape par étape) pour que l'IA comprenne mieux la demande. Moteur 100 % Python à base de règles — sans clé API, hors-ligne — avec détection automatique de la tâche et de la langue, et un score qualité avant/après. Interface web sur-mesure en Streamlit."
+              ghLink="https://github.com/baluva/prompt-booster"
+              demoLink="https://prompt-booster.streamlit.app"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={dbugHunter}
