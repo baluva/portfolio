@@ -7,9 +7,9 @@ function Type() {
       options={{
         strings: [
           "Étudiant en IA & Data Science à Ynov",
-          "Je transforme des données en décisions",
-          "Je construis des petites apps qui servent vraiment",
-          "Dispo pour une alternance",
+          "Plutôt du genre à livrer qu'à théoriser",
+          "Je code des petites apps qui servent vraiment",
+          "Dispo pour une alternance en data / IA",
         ],
         autoStart: true,
         loop: true,

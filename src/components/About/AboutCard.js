@@ -8,13 +8,13 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Salut ! Je suis <span className="purple">Louey Barbirou</span>
+            Salut, moi c'est <span className="purple">Louey</span>.
             <br />
-            Actuellement étudiant en IA & Data Science, passionné par la transformation des données en solutions concrètes.
+            Je suis étudiant en IA & Data Science à Ynov. Ce qui me plaît, c'est prendre des données brutes et en tirer quelque chose d'utile — une analyse, un modèle, un dashboard.
             <br />
-            Je suis en <span className="purple">stage (4 mois) chez trITon</span>, où je développe VideoInsight (analyse vidéo par IA) et où je travaille sur la préparation et l'analyse des données.
+            En ce moment, je suis en <span className="purple">stage chez trITon</span> : je développe VideoInsight (analyse vidéo par IA) et je bosse sur la data.
             <br />
-            J'ai aussi une expérience pratique en analyse de sécurité chez Thales et en business intelligence chez Novogel.
+            Avant, j'ai fait de l'analyse de sécurité (projet Thales) et de la BI chez Novogel.
             <br />
             <br />
             En dehors du code et de l'analyse de données, voici ce que j'aime faire :
