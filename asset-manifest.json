@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.4a153b39.css",
-    "main.js": "/portfolio/static/js/main.a8a9bc5e.js",
+    "main.js": "/portfolio/static/js/main.7ce1ddb3.js",
     "static/js/415.4d6acbeb.chunk.js": "/portfolio/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/CV_Louey_Barbirou.pdf": "/portfolio/static/media/CV_Louey_Barbirou.2373cf2b9f776f5e87b7.pdf",
+    "static/media/CV_Louey_Barbirou.pdf": "/portfolio/static/media/CV_Louey_Barbirou.041d4d7c4d178eb9e718.pdf",
     "static/media/trade_with_ai.png": "/portfolio/static/media/trade_with_ai.6632206d87aae806dfde.png",
     "static/media/spotifapi.png": "/portfolio/static/media/spotifapi.a966e1bc093d4c5e3b6d.png",
     "static/media/prompt_booster.png": "/portfolio/static/media/prompt_booster.3004dc78f659773550f6.png",
@@ -27,12 +27,12 @@
     "static/media/bac_quiz.svg": "/portfolio/static/media/bac_quiz.315edaf4eb4f923c4a4553ed1e074c64.svg",
     "static/media/ymmersion_web.svg": "/portfolio/static/media/ymmersion_web.195494298c1d69c0b218668fcc07ccdb.svg",
     "main.4a153b39.css.map": "/portfolio/static/css/main.4a153b39.css.map",
-    "main.a8a9bc5e.js.map": "/portfolio/static/js/main.a8a9bc5e.js.map",
+    "main.7ce1ddb3.js.map": "/portfolio/static/js/main.7ce1ddb3.js.map",
     "415.4d6acbeb.chunk.js.map": "/portfolio/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4a153b39.css",
-    "static/js/main.a8a9bc5e.js"
+    "static/js/main.7ce1ddb3.js"
   ]
 }
