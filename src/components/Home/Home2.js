@@ -15,26 +15,16 @@ function Home2() {
               <span className="purple">À PROPOS</span>
             </h1>
             <p className="home-about-body">
-              Je suis un étudiant en IA & Data Science passionné par la transformation des données en solutions intelligentes.
+              Je suis en 3e année <b className="purple">IA &amp; Data Science</b> à Ynov Aix. En clair : je code en Python, je manipule des données et je monte des projets de bout en bout — du modèle de machine learning jusqu'au dashboard.
               <br />
               <br />
-              Mon expertise inclut la programmation en
-              <i>
-                <b className="purple"> Python, R, et SAS</b>
-              </i>
+              En ce moment, je suis en <b className="purple">stage chez trITon</b> : je développe <i>VideoInsight</i> (analyse vidéo par IA) et je m'occupe aussi de la partie data.
               <br />
               <br />
-              Je me spécialise en
-              <i>
-                <b className="purple"> Data Science, Machine Learning, et solutions IA</b>
-              </i>
-              , avec une expérience pratique en analyse de sécurité chez Thales et en business intelligence chez Novogel.
+              Avant ça, j'ai touché à l'analyse de sécurité (projet Thales) et à la business intelligence chez Novogel.
               <br />
               <br />
-              Je suis en <b className="purple">stage (4 mois) chez trITon</b>, où je développe <i>VideoInsight</i> (analyse vidéo par IA) et où je travaille sur la préparation et l'analyse des données.
-              <br />
-              <br />
-              Je suis actuellement à la recherche d'une <b className="purple">alternance</b> où je pourrai appliquer mes compétences analytiques et continuer à évoluer dans le domaine de l'IA et de l'innovation data-driven.
+              Je cherche une <b className="purple">alternance</b> en data / IA pour mettre tout ça en pratique.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
