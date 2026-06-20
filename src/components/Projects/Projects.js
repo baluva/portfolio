@@ -155,7 +155,7 @@ function Projects() {
               imgPath={bacQuiz}
               isBlog={false}
               title="Bac Quiz — App Mobile de Révision"
-              description="Application mobile de QCM pour le bac tunisien. Pipeline Python convertissant des sujets PDF en JSON grâce à Claude (vision), back-end Supabase et application développée avec Expo / React Native."
+              description="Application mobile de QCM pour le bac tunisien. Pipeline Python convertissant des sujets PDF en JSON grâce à une IA multimodale (vision), back-end Supabase et application développée avec Expo / React Native."
             />
           </Col>
         </Row>
