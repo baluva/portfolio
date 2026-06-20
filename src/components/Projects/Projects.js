@@ -45,6 +45,7 @@ function Projects() {
               title="Prompt Booster — Optimiseur de Prompts IA"
               description="Application web qui restructure un prompt brut selon les bonnes pratiques (rôle, contexte, format de sortie, contraintes, raisonnement étape par étape) pour que l'IA comprenne mieux la demande. Moteur 100 % Python à base de règles — sans clé API, hors-ligne — avec détection automatique de la tâche et de la langue, et un score qualité avant/après. Interface web sur-mesure en Streamlit."
               ghLink="https://github.com/baluva/prompt-booster"
+              demoLink="https://prompt-booster.streamlit.app"
             />
           </Col>
 
