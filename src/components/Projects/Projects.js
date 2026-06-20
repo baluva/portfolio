@@ -9,6 +9,7 @@ import insightHub from "../../Assets/Projects/insight_hub.png";
 import tradeWithAI from "../../Assets/Projects/trade_with_ai.png";
 import dbugHunter from "../../Assets/Projects/dbug_hunter.png";
 import promptBooster from "../../Assets/Projects/prompt_booster.png";
+import supplyPulse from "../../Assets/Projects/supplypulse.png";
 import videoInsight from "../../Assets/Projects/videoinsight.svg";
 import obesityEda from "../../Assets/Projects/obesity_eda.svg";
 import puissance4 from "../../Assets/Projects/puissance4.svg";
@@ -38,6 +39,16 @@ function Projects() {
           IA &amp; Data Science
         </h3>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={supplyPulse}
+              isBlog={false}
+              title="SupplyPulse — Supply Chain Analytics"
+              description="Plateforme d'analytics supply chain & finance construite sur 180 519 commandes réelles (dataset DataCo). Pipeline de données SQL en couches avec DuckDB (syntaxe compatible BigQuery) : du brut au staging puis aux marts, une couche de gouvernance (dictionnaire de données + tests qualité automatisés exploitables en CI), et un dashboard décisionnel interactif (Streamlit). KPIs : taux de retard de livraison, OTIF, marge, performance par marché et mode d'expédition — révélant que 55 % des livraisons sont en retard."
+              ghLink="https://github.com/baluva/supplypulse"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={promptBooster}
