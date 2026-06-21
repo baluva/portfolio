@@ -19,6 +19,7 @@ import ymmersionWeb from "../../Assets/Projects/ymmersion_web.svg";
 import olist from "../../Assets/Projects/olist.svg";
 import swarmPrediction from "../../Assets/Projects/swarm_prediction.svg";
 import bacQuiz from "../../Assets/Projects/bac_quiz.svg";
+import codeRouteTn from "../../Assets/Projects/code_route_tn.png";
 import ytechDocbase from "../../Assets/Projects/ytech_docbase.svg";
 
 function Projects() {
@@ -156,6 +157,17 @@ function Projects() {
               isBlog={false}
               title="Bac Quiz — App Mobile de Révision"
               description="App mobile de QCM pour le bac tunisien. Un script Python transforme les sujets PDF en questions (via une IA vision), avec Supabase derrière et l'appli en Expo / React Native."
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={codeRouteTn}
+              isBlog={false}
+              title="Code Route TN — Code de la Route Tunisien"
+              description="App web d'entraînement au code de la route tunisien, toutes catégories (moto, voiture, poids lourd, bus, remorque…) et bilingue FR / AR. J'ai récupéré ~11 000 questions et leurs corrigés (scraping + une fonction Apps Script pilotée en headless), hébergé 34 000 images sur Cloudflare R2, et construit l'app en React / Vite : quiz visuel, examen blanc chronométré, examens VIP et progression locale. Déployée sur Cloudflare Pages."
+              ghLink="https://github.com/baluva/code-route-tn"
+              demoLink="https://code-route-tn.pages.dev"
             />
           </Col>
         </Row>
