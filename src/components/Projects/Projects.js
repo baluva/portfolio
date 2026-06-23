@@ -20,6 +20,7 @@ import olist from "../../Assets/Projects/olist.svg";
 import swarmPrediction from "../../Assets/Projects/swarm_prediction.svg";
 import bacQuiz from "../../Assets/Projects/bac_quiz.svg";
 import codeRouteTn from "../../Assets/Projects/code_route_tn.png";
+import frostDays from "../../Assets/Projects/frost_days.png";
 import ytechDocbase from "../../Assets/Projects/ytech_docbase.svg";
 
 function Projects() {
@@ -168,6 +169,16 @@ function Projects() {
               description="App web d'entraînement au code de la route tunisien, toutes catégories (moto, voiture, poids lourd, bus, remorque…) et bilingue FR / AR. J'ai récupéré ~11 000 questions et leurs corrigés (scraping + une fonction Apps Script pilotée en headless), hébergé 34 000 images sur Cloudflare R2, et construit l'app en React / Vite : quiz visuel, examen blanc chronométré, examens VIP et progression locale. Déployée sur Cloudflare Pages."
               ghLink="https://github.com/baluva/code-route-tn"
               demoLink="https://code-route-tn.pages.dev"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={frostDays}
+              isBlog={false}
+              title="Frost Days — Jours de gel par commune"
+              description="Calcul du nombre de jours de gel pour une commune française, à partir des relevés quotidiens de Météo-France (data.gouv.fr). Je rattache chaque commune à la station valide la plus proche (Haversine), j'écarte les stations trop trouées (plus de 35 % de mesures manquantes), puis je sors le total, la moyenne par an et la saisonnalité du gel. Package Python avec une app Streamlit et une CLI."
+              ghLink="https://github.com/baluva/frost-days"
             />
           </Col>
         </Row>
