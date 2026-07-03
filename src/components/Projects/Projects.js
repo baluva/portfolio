@@ -17,8 +17,10 @@ import cryptoTracker from "../../Assets/Projects/crypto_tracker.svg";
 import redRpg from "../../Assets/Projects/red_rpg.svg";
 import ymmersionWeb from "../../Assets/Projects/ymmersion_web.svg";
 import olist from "../../Assets/Projects/olist.svg";
-import swarmPrediction from "../../Assets/Projects/swarm_prediction.svg";
-import bacQuiz from "../../Assets/Projects/bac_quiz.svg";
+import swarmPrediction from "../../Assets/Projects/swarm_prediction.png";
+import bacQuiz from "../../Assets/Projects/bac_quiz.png";
+import techYnov from "../../Assets/Projects/tech_ynov.svg";
+import scandiag from "../../Assets/Projects/scandiag.svg";
 import codeRouteTn from "../../Assets/Projects/code_route_tn.png";
 import frostDays from "../../Assets/Projects/frost_days.png";
 import ytechDocbase from "../../Assets/Projects/ytech_docbase.svg";
@@ -146,9 +148,19 @@ function Projects() {
             <ProjectCard
               imgPath={swarmPrediction}
               isBlog={false}
-              title="Swarm Prediction — Rendement Agricole"
-              description="Prédiction du rendement agricole à partir de données FAO et World Bank, structurées en couches (agriculture, démographie, épidémiologie). Modèles de régression (Ridge, Random Forest, XGBoost) alimentant un moteur de simulation. Projet en binôme."
+              title="Swarm Prediction — De la terre aux gens"
+              description="Notre projet fil rouge : une civilisation modélisée en 5 couches (environnement, démographie, économie, politique, culture) sur 240 pays × 35 ans de données réelles (FAO, World Bank, OMS, NASA). ~170 modèles XGBoost évalués sur des pays jamais vus, puis un moteur récursif qui projette le monde jusqu'en 2100 — avec un skill-score qui dit honnêtement où lui faire confiance. Dashboard Streamlit en forme de récit : globe 3D interactif, photos satellites, simulation par scénarios. Projet en binôme."
               ghLink="https://github.com/2Alexis/Swarm_Prediction"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={techYnov}
+              isBlog={false}
+              title="TechCorp AI Chat — LLM Finance + Audit Sécurité"
+              description="Challenge IA Ynov en 7h, en solo : interface de chat pour un LLM financier (Phi-3.5-Financial) servi par Ollama. Le vrai défi était caché : en auditant le modèle hérité, j'ai découvert une backdoor (déclencheur secret dans le fine-tuning) et un dataset compromis — j'ai documenté l'attaque et redéployé une base saine."
+              ghLink="https://github.com/baluva/techYnov"
             />
           </Col>
 
@@ -156,8 +168,10 @@ function Projects() {
             <ProjectCard
               imgPath={bacQuiz}
               isBlog={false}
-              title="Bac Quiz — App Mobile de Révision"
-              description="App mobile de QCM pour le bac tunisien. Un script Python transforme les sujets PDF en questions (via une IA vision), avec Supabase derrière et l'appli en Expo / React Native."
+              title="Bac Quiz — Réviser le Bac Tunisien"
+              description="App web gratuite pour réviser le bac tunisien : 1 522 épreuves officielles (2010-2025) à télécharger, 959 questions de QCM corrigées classées par spécialité, examens blancs, XP et classement en direct. Un pipeline Python transforme les sujets PDF en questions (IA vision), l'app est en React / Vite avec Supabase (comptes + progression) et les fichiers sur Cloudflare R2. Déployée sur Netlify."
+              ghLink="https://github.com/baluva/bac-quiz"
+              demoLink="https://bacquiz-tn.netlify.app"
             />
           </Col>
 
@@ -235,6 +249,16 @@ function Projects() {
               title="Ymmersion Web"
               description="Application web développée en Go dans le cadre des projets Ymmersion à Ynov : serveur HTTP et rendu de pages côté serveur."
               ghLink="https://github.com/baluva/Ymmrsion2"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={scandiag}
+              isBlog={false}
+              title="SCANDIAG × FACOM — Réemploi RSE"
+              description="Concours Ynov × FACOM : donner une seconde vie à un outil de diagnostic automobile. Rétro-ingénierie matérielle du SCANDIAG (un TEXA Laser Examiner rebadgé) : identification du microcontrôleur STM32F429, du module Bluetooth WT12 et du pont série FTDI, liaison Bluetooth SPP établie en preuve de concept, puis dossier complet de réemploi. Mon premier projet hardware."
+              ghLink="https://github.com/baluva/scandiag-facom-reemploi"
             />
           </Col>
         </Row>
