@@ -19,7 +19,7 @@ import ymmersionWeb from "../../Assets/Projects/ymmersion_web.svg";
 import olist from "../../Assets/Projects/olist.svg";
 import swarmPrediction from "../../Assets/Projects/swarm_prediction.png";
 import bacQuiz from "../../Assets/Projects/bac_quiz.png";
-import techYnov from "../../Assets/Projects/tech_ynov.svg";
+import techYnov from "../../Assets/Projects/tech_ynov.png";
 import scandiag from "../../Assets/Projects/scandiag.svg";
 import codeRouteTn from "../../Assets/Projects/code_route_tn.png";
 import frostDays from "../../Assets/Projects/frost_days.png";
