@@ -24,6 +24,7 @@ import scandiag from "../../Assets/Projects/scandiag.svg";
 import codeRouteTn from "../../Assets/Projects/code_route_tn.png";
 import frostDays from "../../Assets/Projects/frost_days.png";
 import ytechDocbase from "../../Assets/Projects/ytech_docbase.svg";
+import magicAutos from "../../Assets/Projects/magic_autos.png";
 
 function Projects() {
   return (
@@ -202,6 +203,16 @@ function Projects() {
           Développement (Go, Python, jeux)
         </h3>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={magicAutos}
+              isBlog={false}
+              title="Magic Autos Tunisie — Site client"
+              description="Site vitrine pour un vrai client : Magic Autos, un garage à Manouba (Tunisie) qui fait esthétique auto (detailing), mécanique et showroom. Réalisé avec Alexis en React / Vite, avec un back Cloudflare Workers + base D1 : panel admin pour éditer les tarifs de lavage et les stats, devis en un clic via WhatsApp, galerie photos avec zoom plein écran, carte de fidélité « 10ᵉ lavage offert » et badge ouvert / fermé en temps réel. Déployé sur Cloudflare."
+              demoLink="https://magic-autos-tunisie.loueybarbirou12.workers.dev"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={puissance4}
