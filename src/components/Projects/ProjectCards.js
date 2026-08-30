@@ -3,9 +3,11 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
+import Reveal from "../Reveal";
 
 function ProjectCards(props) {
   return (
+    <Reveal>
     <Card className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
       <Card.Body>
@@ -40,6 +42,7 @@ function ProjectCards(props) {
         )}
       </Card.Body>
     </Card>
+    </Reveal>
   );
 }
 

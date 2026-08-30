@@ -1,0 +1,331 @@
+/* ---------------------------------------------------------------------------
+   arcade.css — couche "console rétro" greffée sur le thème existant.
+   Toutes les classes sont préfixées .arc- pour ne pas entrer en collision
+   avec style.css / bootstrap.
+--------------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+html {
+  --arc-pixel: 'Press Start 2P', 'Courier New', monospace;
+  --arc-grid: rgba(196, 242, 78, 0.055);
+}
+
+/* --------- Barre de progression de lecture --------- */
+.arc-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  z-index: 100000;
+  background: linear-gradient(90deg, var(--accent), var(--violet));
+  width: 0;
+  pointer-events: none;
+  transition: width 90ms linear;
+}
+
+/* --------- Grille de fond --------- */
+.arc-grid-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(var(--arc-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--arc-grid) 1px, transparent 1px);
+  background-size: 52px 52px;
+  mask-image: radial-gradient(120% 90% at 50% 0%, #000 30%, transparent 78%);
+  -webkit-mask-image: radial-gradient(120% 90% at 50% 0%, #000 30%, transparent 78%);
+  z-index: 0;
+}
+
+/* --------- Étiquettes pixel --------- */
+.arc-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--arc-pixel);
+  font-size: 0.58rem;
+  line-height: 1.9;
+  letter-spacing: 0.04em;
+  padding: 7px 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: 2px;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.02);
+  white-space: nowrap;
+}
+.arc-tag--accent {
+  color: var(--accent);
+  border-color: rgba(196, 242, 78, 0.45);
+  background: var(--accent-soft);
+}
+.arc-tag--violet {
+  color: var(--violet);
+  border-color: rgba(139, 123, 255, 0.4);
+  background: rgba(139, 123, 255, 0.09);
+}
+
+/* pastille "disponible" qui respire */
+.arc-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex: none;
+  animation: arc-pulse 1.9s ease-in-out infinite;
+}
+@keyframes arc-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%      { opacity: 0.35; transform: scale(0.75); }
+}
+
+/* --------- Badge dispo dans la navbar --------- */
+.arc-avail {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--arc-pixel);
+  font-size: 0.52rem;
+  letter-spacing: 0.03em;
+  padding: 8px 12px;
+  margin-left: 18px;
+  border: 1px solid rgba(196, 242, 78, 0.45);
+  border-radius: 2px;
+  color: var(--accent);
+  background: var(--accent-soft);
+  text-decoration: none;
+  transition: background 0.18s ease, transform 0.18s ease;
+}
+.arc-avail:hover {
+  background: rgba(196, 242, 78, 0.2);
+  color: var(--accent);
+  transform: translateY(-1px);
+}
+@media (max-width: 767px) {
+  .arc-avail { margin: 12px 0 4px; }
+}
+
+/* --------- Hero --------- */
+/* style.css met .home-section en z-index:-1, ce qui crée un contexte
+   d'empilement négatif : la section passe derrière le fond et n'attrape
+   plus aucun clic. Sans élément cliquable dans le hero ça ne se voyait pas,
+   mais les boutons ci-dessous en ont besoin. */
+.home-section {
+  z-index: auto !important;
+}
+#tsparticles {
+  z-index: 0 !important;
+  pointer-events: none !important;
+}
+.arc-hero {
+  position: relative;
+  z-index: 2;
+}
+.arc-hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 26px;
+}
+.arc-name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: clamp(2.7rem, 7vw, 4.6rem);
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+  margin: 0 0 18px;
+}
+.arc-name span { display: block; }
+.arc-name .arc-name-last { color: var(--accent); }
+
+.arc-role {
+  color: var(--muted);
+  font-size: 1.05rem;
+  max-width: 46ch;
+  margin: 0 0 22px;
+}
+
+/* --------- Boutons arcade --------- */
+.arc-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 42px;
+}
+.arc-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-family: var(--arc-pixel);
+  font-size: 0.6rem;
+  letter-spacing: 0.02em;
+  padding: 15px 20px;
+  border-radius: 2px;
+  border: 1px solid var(--line-strong);
+  background: transparent;
+  color: var(--text);
+  text-decoration: none;
+  transition: transform 0.16s ease, box-shadow 0.16s ease, background 0.16s ease;
+}
+.arc-btn:hover {
+  color: var(--text);
+  transform: translate(-2px, -2px);
+  box-shadow: 3px 3px 0 var(--line-strong);
+}
+.arc-btn--primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #0b0b0d;
+}
+.arc-btn--primary:hover {
+  background: var(--accent-press);
+  color: #0b0b0d;
+  box-shadow: 3px 3px 0 rgba(196, 242, 78, 0.35);
+}
+.arc-btn:focus-visible {
+  outline: 2px solid var(--violet);
+  outline-offset: 3px;
+}
+
+/* --------- Compteurs --------- */
+.arc-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(108px, 1fr));
+  gap: 22px 26px;
+  max-width: 640px;
+}
+
+/* ligne "typewriter" sous le rôle */
+.arc-typeline {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+  font-family: 'Cascadia Mono', Consolas, 'SF Mono', ui-monospace, monospace;
+  font-size: 0.9rem;
+  color: var(--accent);
+  margin-bottom: 26px;
+  min-height: 1.6em;
+}
+.arc-typeline::before {
+  content: ">";
+  color: var(--violet);
+  flex: none;
+}
+.arc-stat-num {
+  font-family: var(--arc-pixel);
+  font-size: 1.35rem;
+  color: var(--accent);
+  line-height: 1.25;
+  font-variant-numeric: tabular-nums;
+}
+.arc-stat-label {
+  margin-top: 8px;
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.35;
+}
+
+/* --------- Console --------- */
+.arc-console {
+  border: 1px solid var(--line-strong);
+  border-radius: 3px;
+  background: #08080a;
+  overflow: hidden;
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.55);
+}
+.arc-console-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.025);
+}
+.arc-console-led {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex: none;
+}
+.arc-console-title {
+  margin-left: 8px;
+  font-family: var(--arc-pixel);
+  font-size: 0.5rem;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+}
+.arc-console-body {
+  padding: 20px 18px 22px;
+  min-height: 292px;
+  font-family: 'Cascadia Mono', Consolas, 'SF Mono', ui-monospace, monospace;
+  font-size: 0.83rem;
+  line-height: 1.85;
+  color: #d4d4d8;
+}
+.arc-line { display: block; white-space: pre-wrap; word-break: break-word; }
+.arc-line-prompt { color: var(--violet); }
+.arc-line-ok { color: var(--accent); }
+.arc-line-dim { color: #6f6f7b; }
+.arc-caret {
+  display: inline-block;
+  width: 8px;
+  height: 1em;
+  margin-left: 2px;
+  vertical-align: -2px;
+  background: var(--accent);
+  animation: arc-blink 1s steps(2, start) infinite;
+}
+@keyframes arc-blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+/* jauges en blocs pixel */
+.arc-meter { margin-top: 18px; }
+.arc-meter-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 9px;
+}
+.arc-meter-name {
+  flex: none;
+  width: 92px;
+  font-family: var(--arc-pixel);
+  font-size: 0.48rem;
+  color: var(--muted);
+}
+.arc-meter-blocks { display: flex; gap: 3px; }
+.arc-meter-blocks i {
+  width: 11px;
+  height: 11px;
+  background: rgba(255, 255, 255, 0.09);
+  border-radius: 1px;
+  transform: scale(0.2);
+  opacity: 0;
+  animation: arc-pop 0.28s ease forwards;
+}
+.arc-meter-blocks i.on { background: var(--accent); }
+@keyframes arc-pop { to { transform: scale(1); opacity: 1; } }
+
+/* --------- Titres de section --------- */
+.arc-eyebrow {
+  display: block;
+  font-family: var(--arc-pixel);
+  font-size: 0.56rem;
+  letter-spacing: 0.06em;
+  color: var(--violet);
+  margin-bottom: 16px;
+}
+
+/* --------- Apparition au défilement --------- */
+.arc-reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.arc-reveal.is-in { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .arc-reveal { opacity: 1; transform: none; transition: none; }
+  .arc-dot, .arc-caret, .arc-meter-blocks i { animation: none; opacity: 1; transform: none; }
+  .arc-btn:hover { transform: none; }
+}
