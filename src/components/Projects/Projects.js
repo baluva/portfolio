@@ -25,12 +25,18 @@ import codeRouteTn from "../../Assets/Projects/code_route_tn.png";
 import frostDays from "../../Assets/Projects/frost_days.png";
 import ytechDocbase from "../../Assets/Projects/ytech_docbase.svg";
 import magicAutos from "../../Assets/Projects/magic_autos.png";
+import soukBvmt from "../../Assets/Projects/souk_bvmt.png";
+import sawtna from "../../Assets/Projects/sawtna.png";
+import mapsProspector from "../../Assets/Projects/maps_prospector.svg";
 
 function Projects() {
   return (
     <Container fluid className="project-section">
       <Particle />
       <Container>
+        <span className="arc-eyebrow" style={{ textAlign: "center" }}>
+          {"// TRAVAUX"}
+        </span>
         <h1 className="project-heading">
           Mes <strong className="purple">Projets </strong>
         </h1>
@@ -189,6 +195,26 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={soukBvmt}
+              isBlog={false}
+              title="Souk — Trading sur la Bourse de Tunis"
+              description="Un jeu de trading branché sur les vrais cours de la Bourse de Tunis. Je récupère le flux officiel de la BVMT (77 valeurs cotées) via un proxy que j'ai écrit pour contourner le CORS, avec un rafraîchissement toutes les 2 secondes pendant la séance et les cours de clôture réels en dehors. On démarre avec 100 DT, on peut acheter des fractions de titres, il y a 9 défis à débloquer et un classement en direct. Tout est fait main en React / TypeScript, sans librairie d'interface — y compris les logos des 77 sociétés."
+              ghLink="https://github.com/baluva/tunis-bourse"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={mapsProspector}
+              isBlog={false}
+              title="Maps Prospector — Prospection automatisée"
+              description="Un outil Python qui trouve les établissements français sans site web via l'API Google Places, enrichit les fiches, puis envoie les emails de prospection depuis Outlook et suit les réponses. Pipeline en deux étapes (collecte puis envoi), avec un tableau de bord Streamlit pour piloter les campagnes et un tracker d'ouvertures."
+              ghLink="https://github.com/baluva/maps-prospector"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={frostDays}
               isBlog={false}
               title="Frost Days — Jours de gel par commune"
@@ -210,6 +236,16 @@ function Projects() {
               title="Magic Autos Tunisie — Site client"
               description="Site vitrine pour un vrai client : Magic Autos, un garage à Manouba (Tunisie) qui fait esthétique auto (detailing), mécanique et showroom. Réalisé avec Alexis en React / Vite, avec un back Cloudflare Workers + base D1 : panel admin pour éditer les tarifs de lavage et les stats, devis en un clic via WhatsApp, galerie photos avec zoom plein écran, carte de fidélité « 10ᵉ lavage offert » et badge ouvert / fermé en temps réel. Déployé sur Cloudflare."
               demoLink="https://magic-autos-tunisie.loueybarbirou12.workers.dev"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={sawtna}
+              isBlog={false}
+              title="Sawtna — La place publique tunisienne"
+              description="Une plateforme où des citoyens vérifiés par leur CIN proposent des projets concrets pour la Tunisie et en débattent : pas de pseudos anonymes, on critique l'idée pas la personne. Projets avec objectifs de soutien et cycle de vie, sondages en direct, ancrage par gouvernorat, notifications, file de modération et espace admin. React / Vite / TypeScript avec deux backends interchangeables — mode local pour la démo, Supabase (RLS + fonctions SQL) en production."
+              ghLink="https://github.com/baluva/sawtna"
             />
           </Col>
 

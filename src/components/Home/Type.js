@@ -6,14 +6,14 @@ function Type() {
     <Typewriter
       options={{
         strings: [
-          "Étudiant en IA & Data Science à Ynov",
-          "Plutôt du genre à livrer qu'à théoriser",
-          "Je code des petites apps qui servent vraiment",
-          "Dispo pour une alternance en data / IA",
+          "je nettoie des données pas très propres",
+          "je construis des dashboards qu'on ouvre vraiment",
+          "je préfère livrer que théoriser",
+          "dispo pour une alternance en data / IA",
         ],
         autoStart: true,
         loop: true,
-        deleteSpeed: 50,
+        deleteSpeed: 40,
       }}
     />
   );

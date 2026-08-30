@@ -90,6 +90,16 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
+            <Nav.Item>
+              <a
+                className="arc-avail"
+                href="mailto:louey.barbirou@ynov.com?subject=Alternance%20Data%20%2F%20IA"
+              >
+                <span className="arc-dot" />
+                DISPO · ALTERNANCE
+              </a>
+            </Nav.Item>
+
             {/* <Nav.Item>
               <Nav.Link
                 href="https://Alexis-Clerc.vercel.app/"

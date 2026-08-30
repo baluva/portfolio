@@ -13,7 +13,9 @@ import {
   Navigate
 } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
+import ScrollProgress from "./components/ScrollProgress";
 import "./style.css";
+import "./arcade.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -32,6 +34,7 @@ function App() {
     <Router>
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
+        <ScrollProgress />
         <Navbar />
         <ScrollToTop />
         <Routes>
