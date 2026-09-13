@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 
 const STATS = [
   { to: 26, suffix: "", label: "projets menés" },
-  { to: 180, suffix: "K", label: "commandes analysées" },
   { to: 5, suffix: "", label: "apps en ligne" },
   { to: 3, suffix: "", label: "langues parlées" },
 ];
