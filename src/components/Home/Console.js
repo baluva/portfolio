@@ -8,7 +8,6 @@ const SCRIPT = [
   { text: "  [2/4] nettoyage & jointures .......... ok", kind: "dim" },
   { text: "  [3/4] marts + tests qualité .......... ok", kind: "dim" },
   { text: "  [4/4] dashboard ...................... prêt", kind: "dim" },
-  { text: "✓ 54,8 % de livraisons en retard · marge réelle 10,8 %", kind: "ok" },
 ];
 
 const METERS = [
