@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 // Le contenu reprend un vrai run du projet SupplyPulse.
 const SCRIPT = [
   { text: "louey@portfolio:~$ python supplypulse/run.py", kind: "prompt" },
-  { text: "  [1/4] chargement des commandes ....... 180 000", kind: "dim" },
+  { text: "  [1/4] chargement des commandes ....... ok", kind: "dim" },
   { text: "  [2/4] nettoyage & jointures .......... ok", kind: "dim" },
   { text: "  [3/4] marts + tests qualité .......... ok", kind: "dim" },
   { text: "  [4/4] dashboard ...................... prêt", kind: "dim" },

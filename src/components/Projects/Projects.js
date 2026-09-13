@@ -55,7 +55,7 @@ function Projects() {
               imgPath={supplyPulse}
               isBlog={false}
               title="SupplyPulse — Supply Chain Analytics"
-              description="Mon projet data le plus poussé. J'ai pris 180 000 commandes réelles (dataset DataCo) pour analyser une chaîne logistique de bout en bout. J'ai monté un entrepôt en couches avec DuckDB (du brut aux tables prêtes à l'analyse), ajouté des tests de qualité des données qui tournent en CI, et un dashboard Streamlit avec les bons KPIs (retards, OTIF, marge, performance par marché). Résultat qui parle : 55 % des livraisons arrivent en retard."
+              description="Mon projet data le plus poussé. J'ai pris un dataset réel (DataCo) pour analyser une chaîne logistique de bout en bout. J'ai monté un entrepôt en couches avec DuckDB (du brut aux tables prêtes à l'analyse), ajouté des tests de qualité des données qui tournent en CI, et un dashboard Streamlit avec les bons KPIs (retards, OTIF, marge, performance par marché)."
               ghLink="https://github.com/baluva/supplypulse"
             />
           </Col>
