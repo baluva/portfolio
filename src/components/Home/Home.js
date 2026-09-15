@@ -24,6 +24,7 @@ function Home() {
                     <span className="arc-dot" />
                     ALTERNANCE · SEPT. 2026
                   </span>
+                  <span className="arc-tag">2 SEM. ENTREPRISE / 1 SEM. ÉCOLE</span>
                   <span className="arc-tag">MARSEILLE / AIX</span>
                 </div>
               </Reveal>
