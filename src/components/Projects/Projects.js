@@ -10,6 +10,7 @@ import tradeWithAI from "../../Assets/Projects/trade_with_ai.png";
 import dbugHunter from "../../Assets/Projects/dbug_hunter.png";
 import promptBooster from "../../Assets/Projects/prompt_booster.png";
 import supplyPulse from "../../Assets/Projects/supplypulse.png";
+import wattcast from "../../Assets/Projects/wattcast.png";
 import videoInsight from "../../Assets/Projects/videoinsight.svg";
 import obesityEda from "../../Assets/Projects/obesity_eda.svg";
 import puissance4 from "../../Assets/Projects/puissance4.svg";
@@ -50,6 +51,16 @@ function Projects() {
           IA &amp; Data Science
         </h3>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={wattcast}
+              isBlog={false}
+              title="WattCast — Mon modèle contre RTE"
+              description="Un modèle qui prévoit chaque jour la consommation électrique française du lendemain, en production, noté contre la prévision officielle de RTE. Pipeline quotidien GitHub Actions, entrepôt dbt + DuckDB, LightGBM, backtest sur 3 ans et demi avec la météo telle qu'elle était prévue la veille, test anti-fuite, drift et réentraînement automatique, API FastAPI. Résultat honnête : 1,90 % d'erreur contre 1,97 % pour RTE, mais RTE rate moins gros les jours difficiles. Et le README raconte le bug qui me faisait croire que je battais RTE de 25 %."
+              ghLink="https://github.com/baluva/wattcast"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={supplyPulse}
