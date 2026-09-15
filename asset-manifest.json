@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.85ff0c4c.css",
-    "main.js": "/portfolio/static/js/main.ba81f227.js",
+    "main.js": "/portfolio/static/js/main.e25573e1.js",
     "static/js/415.4d6acbeb.chunk.js": "/portfolio/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/magic_autos.png": "/portfolio/static/media/magic_autos.dd13db7c11055aea58db.png",
@@ -22,26 +22,27 @@
     "static/media/sawtna.png": "/portfolio/static/media/sawtna.2d1cc84c9133c59cb2a3.png",
     "static/media/bac_quiz.png": "/portfolio/static/media/bac_quiz.be1455070dd9d38f431a.png",
     "static/media/about.png": "/portfolio/static/media/about.aee0f771fbfc1e7b8fa8.png",
+    "static/media/wattcast.png": "/portfolio/static/media/wattcast.901b87b8b5a864745340.png",
     "static/media/heart_attack.png": "/portfolio/static/media/heart_attack.132a80430bcc4a047cb8.png",
     "static/media/pre.svg": "/portfolio/static/media/pre.4410c5baaa673cc131da.svg",
     "index.html": "/portfolio/index.html",
     "static/media/maps_prospector.svg": "/portfolio/static/media/maps_prospector.ab3ec0d399c1ae6bf18376b09f939d68.svg",
-    "static/media/puissance4.svg": "/portfolio/static/media/puissance4.1717a6d4e26352b118a631dfd5388ff1.svg",
-    "static/media/obesity_eda.svg": "/portfolio/static/media/obesity_eda.a088ba227c01994c41018d30ac9a3dda.svg",
-    "static/media/red_rpg.svg": "/portfolio/static/media/red_rpg.bd7dd96d6a6745158ae9342812be2932.svg",
-    "static/media/crypto_tracker.svg": "/portfolio/static/media/crypto_tracker.09513c50fd0fa15c02299d8b5be0be21.svg",
-    "static/media/scandiag.svg": "/portfolio/static/media/scandiag.d14dc792ee41fbaf463572a6057444ee.svg",
-    "static/media/ytech_docbase.svg": "/portfolio/static/media/ytech_docbase.94a2eeefac6050d3a4632173da4f57c4.svg",
-    "static/media/videoinsight.svg": "/portfolio/static/media/videoinsight.905ce6fce13d22cf1f52af5b2f5ceb3c.svg",
-    "static/media/olist.svg": "/portfolio/static/media/olist.ede44484245418cf1cbe97bccd85bad7.svg",
-    "static/media/ymmersion_web.svg": "/portfolio/static/media/ymmersion_web.195494298c1d69c0b218668fcc07ccdb.svg",
+    "static/media/scandiag.svg": "/portfolio/static/media/scandiag.804123dc5321a9b06ee8609406dc3f94.svg",
+    "static/media/puissance4.svg": "/portfolio/static/media/puissance4.18c302faf0b8b0ff8b31a1f535a59a65.svg",
+    "static/media/obesity_eda.svg": "/portfolio/static/media/obesity_eda.4f1c8045134a1087f4840438dbeac678.svg",
+    "static/media/red_rpg.svg": "/portfolio/static/media/red_rpg.5faadca137243f78d8e3abbd161c04f8.svg",
+    "static/media/crypto_tracker.svg": "/portfolio/static/media/crypto_tracker.eab3fb019a5e3fd524cfa1be65add310.svg",
+    "static/media/ytech_docbase.svg": "/portfolio/static/media/ytech_docbase.544d6be50a2e00d9c81030c9175ad409.svg",
+    "static/media/videoinsight.svg": "/portfolio/static/media/videoinsight.89f136aaafba84daf8e961424a13d28b.svg",
+    "static/media/olist.svg": "/portfolio/static/media/olist.c44399dd9b42047f78a473c146e2bdb7.svg",
+    "static/media/ymmersion_web.svg": "/portfolio/static/media/ymmersion_web.93f2c98ee59e86393ca29971127270c9.svg",
     "main.85ff0c4c.css.map": "/portfolio/static/css/main.85ff0c4c.css.map",
-    "main.ba81f227.js.map": "/portfolio/static/js/main.ba81f227.js.map",
+    "main.e25573e1.js.map": "/portfolio/static/js/main.e25573e1.js.map",
     "415.4d6acbeb.chunk.js.map": "/portfolio/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.85ff0c4c.css",
-    "static/js/main.ba81f227.js"
+    "static/js/main.e25573e1.js"
   ]
 }
