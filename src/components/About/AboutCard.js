@@ -16,6 +16,8 @@ function AboutCard() {
             <br />
             Avant, j'ai fait de l'analyse de sécurité (projet Thales) et de la BI chez Novogel.
             <br />
+            Je cherche une <span className="purple">alternance en data / IA</span>, au rythme 2 semaines en entreprise / 1 semaine à l'école.
+            <br />
             <br />
             En dehors du code et de l'analyse de données, voici ce que j'aime faire :
           </p>

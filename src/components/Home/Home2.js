@@ -25,7 +25,7 @@ function Home2() {
               Avant ça, j'ai touché à l'analyse de sécurité (projet Thales) et à la business intelligence chez Novogel.
               <br />
               <br />
-              Je cherche une <b className="purple">alternance</b> en data / IA pour mettre tout ça en pratique.
+              Je cherche une <b className="purple">alternance</b> en data / IA pour mettre tout ça en pratique, au rythme <b className="purple">2 semaines en entreprise / 1 semaine à l'école</b>.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
