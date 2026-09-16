@@ -347,6 +347,17 @@ button:focus { box-shadow: none !important; }
   color: var(--text) !important;
 }
 .resume { padding: 50px 0; justify-content: center; }
+.resume-lang {
+  display: inline-flex; width: auto !important; flex: 0 0 auto; padding: 4px; margin-bottom: 18px;
+  border: 1px solid var(--line-strong); border-radius: 999px; background: var(--surface);
+}
+.resume-lang button {
+  border: 0; background: transparent; color: var(--muted);
+  font: 500 0.9rem 'Space Grotesk', sans-serif; padding: 6px 18px; border-radius: 999px;
+  transition: color .15s ease, background .15s ease;
+}
+.resume-lang button:hover { color: var(--text); }
+.resume-lang button.active { background: var(--accent); color: var(--bg); }
 .resume-left { padding-right: 80px !important; }
 .resume-right { padding-left: 80px !important; }
 @media (max-width: 767px) {
