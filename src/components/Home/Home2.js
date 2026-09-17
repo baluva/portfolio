@@ -16,7 +16,7 @@ function Home2() {
               <span className="purple">À PROPOS</span>
             </h1>
             <p className="home-about-body">
-              Je suis en 3e année <b className="purple">IA &amp; Data Science</b> à Ynov Aix. En clair : je code en Python, je manipule des données et je monte des projets de bout en bout — du modèle de machine learning jusqu'au dashboard.
+              Je suis en 3e année <b className="purple">IA &amp; Data Science</b> à Ynov Aix. En clair : je code en Python, je manipule des données et je monte des projets complets, du modèle de machine learning jusqu'au dashboard.
               <br />
               <br />
               En ce moment, je suis en <b className="purple">stage chez trITon</b> : je développe <i>VideoInsight</i> (analyse vidéo par IA) et je m'occupe aussi de la partie data.

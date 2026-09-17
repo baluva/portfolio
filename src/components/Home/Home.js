@@ -39,8 +39,8 @@ function Home() {
               <Reveal delay={150}>
                 <p className="arc-role">
                   Étudiant en 3<sup>e</sup> année IA &amp; Data Science à Ynov Aix,
-                  disponible tout de suite pour une alternance. Je suis un produit de bout en bout,
-                  de la donnée jusqu'à la mise en production.
+                  disponible tout de suite pour une alternance. Je suis un produit de la donnée
+                  jusqu'à la mise en production.
                 </p>
                 <div className="arc-typeline">
                   <Type />
