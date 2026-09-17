@@ -22,7 +22,7 @@ function Home() {
                   <span className="arc-tag arc-tag--violet">{"// DATA & IA"}</span>
                   <span className="arc-tag arc-tag--accent">
                     <span className="arc-dot" />
-                    ALTERNANCE · SEPT. 2026
+                    DISPONIBLE IMMÉDIATEMENT
                   </span>
                   <span className="arc-tag">2 SEM. ENTREPRISE / 1 SEM. ÉCOLE</span>
                   <span className="arc-tag">MARSEILLE / AIX</span>
@@ -39,8 +39,8 @@ function Home() {
               <Reveal delay={150}>
                 <p className="arc-role">
                   Étudiant en 3<sup>e</sup> année IA &amp; Data Science à Ynov Aix,
-                  en stage chez trITon. Je monte des projets de bout en bout —
-                  du nettoyage des données jusqu'au dashboard.
+                  disponible tout de suite pour une alternance. Je suis un produit de bout en bout,
+                  de la donnée jusqu'à la mise en production.
                 </p>
                 <div className="arc-typeline">
                   <Type />

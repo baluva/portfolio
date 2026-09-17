@@ -25,7 +25,13 @@ function Home2() {
               Avant ça, j'ai touché à l'analyse de sécurité (projet Thales) et à la business intelligence chez Novogel.
               <br />
               <br />
-              Je cherche une <b className="purple">alternance</b> en data / IA pour mettre tout ça en pratique, au rythme <b className="purple">2 semaines en entreprise / 1 semaine à l'école</b>.
+              Sur mes projets, je ne m'arrête pas au code qui marche sur ma machine. Je me pose les questions d'après : est-ce que ça tiendra avec plus d'utilisateurs (<b className="purple">scalabilité</b>), est-ce que quelqu'un d'autre pourra le reprendre (<b className="purple">maintenance</b>), est-ce que c'est rapide (<b className="purple">performance</b>), est-ce que c'est protégé (<b className="purple">sécurité &amp; infrastructure</b>). J'aime toucher à plusieurs domaines, parce que c'est comme ça que je comprends un produit en entier.
+              <br />
+              <br />
+              Je suis à l'aise avec les outils de développement (VS Code, JetBrains, Git, Docker) et les assistants IA (Claude Code, Copilot, Gemini, Ollama). Le <b className="purple">prompt engineering</b>, je l'ai appris en construisant mes propres produits, à commencer par Prompt Booster.
+              <br />
+              <br />
+              Je suis en début de parcours et je cherche une <b className="purple">alternance</b> en data / IA pour prouver ce que je sais faire et progresser, au rythme <b className="purple">2 semaines en entreprise / 1 semaine à l'école</b>. <b className="purple">Disponible immédiatement.</b>
             </p>
           </Col>
           <Col md={4} className="myAvtar">
