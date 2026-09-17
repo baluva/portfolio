@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.e2114c34.css",
-    "main.js": "/portfolio/static/js/main.b5939eb7.js",
+    "main.js": "/portfolio/static/js/main.ce16f9e6.js",
     "static/js/415.4d6acbeb.chunk.js": "/portfolio/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/magic_autos.png": "/portfolio/static/media/magic_autos.dd13db7c11055aea58db.png",
@@ -15,8 +15,8 @@
     "static/media/prompt_booster.png": "/portfolio/static/media/prompt_booster.3004dc78f659773550f6.png",
     "static/media/dbug_hunter.png": "/portfolio/static/media/dbug_hunter.26bca6bf987c5f782ffc.png",
     "static/media/messi_analytics.png": "/portfolio/static/media/messi_analytics.dda6507d4e0435811011.png",
-    "static/media/CV_Louey_Barbirou.pdf": "/portfolio/static/media/CV_Louey_Barbirou.a3d477b5e625a1b6b202.pdf",
-    "static/media/CV_Louey_Barbirou_EN.pdf": "/portfolio/static/media/CV_Louey_Barbirou_EN.75515d531d3d135d5b38.pdf",
+    "static/media/CV_Louey_Barbirou.pdf": "/portfolio/static/media/CV_Louey_Barbirou.b09140d08dcd60a0f349.pdf",
+    "static/media/CV_Louey_Barbirou_EN.pdf": "/portfolio/static/media/CV_Louey_Barbirou_EN.471a6dbb84aa448f49e9.pdf",
     "static/media/souk_bvmt.png": "/portfolio/static/media/souk_bvmt.ba3783f9ad95fb9fca29.png",
     "static/media/frost_days.png": "/portfolio/static/media/frost_days.c1e526bdda1453b89e9e.png",
     "static/media/insight_hub.png": "/portfolio/static/media/insight_hub.b1e1673b115043b5b0a7.png",
@@ -38,12 +38,12 @@
     "static/media/olist.svg": "/portfolio/static/media/olist.ede44484245418cf1cbe97bccd85bad7.svg",
     "static/media/ymmersion_web.svg": "/portfolio/static/media/ymmersion_web.195494298c1d69c0b218668fcc07ccdb.svg",
     "main.e2114c34.css.map": "/portfolio/static/css/main.e2114c34.css.map",
-    "main.b5939eb7.js.map": "/portfolio/static/js/main.b5939eb7.js.map",
+    "main.ce16f9e6.js.map": "/portfolio/static/js/main.ce16f9e6.js.map",
     "415.4d6acbeb.chunk.js.map": "/portfolio/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e2114c34.css",
-    "static/js/main.b5939eb7.js"
+    "static/js/main.ce16f9e6.js"
   ]
 }
