@@ -1,9 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
+import { useLang } from "../../i18n";
 
 const STATS = [
-  { to: 26, suffix: "", label: "projets menés" },
-  { to: 5, suffix: "", label: "apps en ligne" },
-  { to: 3, suffix: "", label: "langues parlées" },
+  { to: 26, suffix: "", label: { fr: "projets menés", en: "projects built" } },
+  { to: 5, suffix: "", label: { fr: "apps en ligne", en: "live apps" } },
+  { to: 3, suffix: "", label: { fr: "langues parlées", en: "languages spoken" } },
 ];
 
 function useCountUp(to, run) {
@@ -51,6 +52,7 @@ function Stat({ to, suffix, label, run }) {
 }
 
 function Stats() {
+  const { t } = useLang();
   const ref = useRef(null);
   const [run, setRun] = useState(false);
 
@@ -77,7 +79,7 @@ function Stats() {
   return (
     <div className="arc-stats" ref={ref}>
       {STATS.map((s) => (
-        <Stat key={s.label} {...s} run={run} />
+        <Stat key={s.to + s.label.en} {...s} label={t(s.label)} run={run} />
       ))}
     </div>
   );

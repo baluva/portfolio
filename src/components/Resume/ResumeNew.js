@@ -7,16 +7,18 @@ import pdfEn from "../../Assets/CV_Louey_Barbirou_EN.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import { useLang, LangSwitch } from "../../i18n";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const VERSIONS = {
-  fr: { file: pdfFr, label: "Français", download: "Télécharger le CV" },
-  en: { file: pdfEn, label: "English", download: "Download the resume" },
+  fr: { file: pdfFr, download: "Télécharger le CV" },
+  en: { file: pdfEn, download: "Download the resume" },
 };
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
-  const [lang, setLang] = useState("fr");
+  const [numPages, setNumPages] = useState(null);
+  const { lang } = useLang();
   const { file: pdf, download } = VERSIONS[lang];
 
   useEffect(() => {
@@ -28,19 +30,7 @@ function ResumeNew() {
       <Container fluid className="resume-section">
         <Particle />
         <Row style={{ justifyContent: "center", position: "relative" }}>
-          <div className="resume-lang" role="group" aria-label="Langue du CV">
-            {Object.entries(VERSIONS).map(([key, v]) => (
-              <button
-                key={key}
-                type="button"
-                className={lang === key ? "active" : ""}
-                aria-pressed={lang === key}
-                onClick={() => setLang(key)}
-              >
-                {v.label}
-              </button>
-            ))}
-          </div>
+          <LangSwitch className="resume-lang" />
         </Row>
 
         <Row style={{ justifyContent: "center", position: "relative" }}>
@@ -56,8 +46,20 @@ function ResumeNew() {
         </Row>
 
         <Row className="resume">
-          <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+          <Document
+            key={lang}
+            file={pdf}
+            className="d-flex flex-column align-items-center"
+            onLoadSuccess={({ numPages }) => setNumPages(numPages)}
+          >
+            {Array.from({ length: numPages || 1 }, (_, i) => (
+              <Page
+                key={i}
+                pageNumber={i + 1}
+                scale={width > 786 ? 1.7 : 0.6}
+                className="resume-page"
+              />
+            ))}
           </Document>
         </Row>
 

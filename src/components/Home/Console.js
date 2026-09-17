@@ -1,14 +1,24 @@
 import React, { useEffect, useRef, useState } from "react";
+import { useLang } from "../../i18n";
 
 // Lignes jouées les unes après les autres, comme une exécution de script.
 // Le contenu reprend un vrai run du projet SupplyPulse.
-const SCRIPT = [
-  { text: "louey@portfolio:~$ python supplypulse/run.py", kind: "prompt" },
-  { text: "  [1/4] chargement des commandes ....... ok", kind: "dim" },
-  { text: "  [2/4] nettoyage & jointures .......... ok", kind: "dim" },
-  { text: "  [3/4] marts + tests qualité .......... ok", kind: "dim" },
-  { text: "  [4/4] dashboard ...................... prêt", kind: "dim" },
-];
+const SCRIPTS = {
+  fr: [
+    { text: "louey@portfolio:~$ python supplypulse/run.py", kind: "prompt" },
+    { text: "  [1/4] chargement des commandes ....... ok", kind: "dim" },
+    { text: "  [2/4] nettoyage & jointures .......... ok", kind: "dim" },
+    { text: "  [3/4] marts + tests qualité .......... ok", kind: "dim" },
+    { text: "  [4/4] dashboard ...................... prêt", kind: "dim" },
+  ],
+  en: [
+    { text: "louey@portfolio:~$ python supplypulse/run.py", kind: "prompt" },
+    { text: "  [1/4] loading orders ................. ok", kind: "dim" },
+    { text: "  [2/4] cleaning & joins ............... ok", kind: "dim" },
+    { text: "  [3/4] marts + quality tests .......... ok", kind: "dim" },
+    { text: "  [4/4] dashboard ...................... ready", kind: "dim" },
+  ],
+};
 
 const METERS = [
   { name: "PYTHON", level: 9 },
@@ -20,6 +30,8 @@ const METERS = [
 const TOTAL_BLOCKS = 10;
 
 function Console() {
+  const { lang } = useLang();
+  const SCRIPT = SCRIPTS[lang];
   const [lines, setLines] = useState([]);
   const [typed, setTyped] = useState("");
   const [showMeters, setShowMeters] = useState(false);
@@ -75,7 +87,7 @@ function Console() {
         clearInterval(t);
       });
     };
-  }, []);
+  }, [SCRIPT]);
 
   const cls = (kind) =>
     kind === "prompt"
