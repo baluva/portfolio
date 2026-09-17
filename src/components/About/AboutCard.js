@@ -16,7 +16,9 @@ function AboutCard() {
             <br />
             Avant, j'ai fait de l'analyse de sécurité (projet Thales) et de la BI chez Novogel.
             <br />
-            Je cherche une <span className="purple">alternance en data / IA</span>, au rythme 2 semaines en entreprise / 1 semaine à l'école.
+            Ce qui m'intéresse, c'est le produit en entier : sa <span className="purple">scalabilité</span>, sa <span className="purple">maintenance</span>, ses <span className="purple">performances</span> et sa <span className="purple">sécurité</span>, jusqu'à l'infrastructure. Je suis polyvalent et à l'aise avec les outils de dev et les assistants IA ; le prompt engineering, je l'ai appris en construisant mes propres produits.
+            <br />
+            Je cherche une <span className="purple">alternance en data / IA</span>, au rythme 2 semaines en entreprise / 1 semaine à l'école, et je suis <span className="purple">disponible immédiatement</span>.
             <br />
             <br />
             En dehors du code et de l'analyse de données, voici ce que j'aime faire :

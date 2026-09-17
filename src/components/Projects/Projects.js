@@ -76,7 +76,7 @@ function Projects() {
               imgPath={promptBooster}
               isBlog={false}
               title="Prompt Booster — Optimiseur de Prompts IA"
-              description="Tu colles un prompt écrit vite fait, l'appli le réécrit proprement (rôle, contexte, format attendu, contraintes) pour que l'IA comprenne mieux ta demande. Tout est en Python, à base de règles : pas de clé API, ça marche hors-ligne. Ça repère le type de tâche et la langue, et ça note la qualité avant / après. Interface en Streamlit."
+              description="Tu colles un prompt écrit vite fait, l'appli le réécrit proprement (rôle, contexte, format attendu, contraintes) pour que l'IA comprenne mieux ta demande. Tout est en Python, à base de règles : pas de clé API, ça marche hors-ligne. Ça repère le type de tâche et la langue, et ça note la qualité avant / après. Interface en Streamlit. C'est en construisant cet outil que j'ai appris le prompt engineering, que je réutilise depuis dans mes autres produits."
               ghLink="https://github.com/baluva/prompt-booster"
               demoLink="https://prompt-booster.streamlit.app"
             />
