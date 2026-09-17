@@ -14,6 +14,7 @@ import {
 } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import ScrollProgress from "./components/ScrollProgress";
+import { LangProvider } from "./i18n";
 import "./style.css";
 import "./arcade.css";
 import "./App.css";
@@ -31,6 +32,7 @@ function App() {
   }, []);
 
   return (
+    <LangProvider>
     <Router>
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
@@ -47,6 +49,7 @@ function App() {
         <Footer />
       </div>
     </Router>
+    </LangProvider>
   );
 }
 

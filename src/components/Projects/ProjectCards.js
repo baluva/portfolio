@@ -4,8 +4,10 @@ import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 import Reveal from "../Reveal";
+import { useLang } from "../../i18n";
 
 function ProjectCards(props) {
+  const { t } = useLang();
   return (
     <Reveal>
     <Card className="project-card-view">
@@ -37,7 +39,7 @@ function ProjectCards(props) {
             style={{ marginLeft: "10px" }}
           >
             <CgWebsite /> &nbsp;
-            {"Lien vers le site"}
+            {t({ fr: "Lien vers le site", en: "Live site" })}
           </Button>
         )}
       </Card.Body>

@@ -13,10 +13,12 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
+import { useLang, LangSwitch } from "../i18n";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const { t } = useLang();
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -53,7 +55,7 @@ function NavBar() {
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Accueil
+                <AiOutlineHome style={{ marginBottom: "2px" }} /> {t({ fr: "Accueil", en: "Home" })}
               </Nav.Link>
             </Nav.Item>
 
@@ -63,7 +65,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> À propos
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> {t({ fr: "À propos", en: "About" })}
               </Nav.Link>
             </Nav.Item>
 
@@ -76,7 +78,7 @@ function NavBar() {
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Projets
+                {t({ fr: "Projets", en: "Projects" })}
               </Nav.Link>
             </Nav.Item>
 
@@ -86,7 +88,7 @@ function NavBar() {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> CV
+                <CgFileDocument style={{ marginBottom: "2px" }} /> {t({ fr: "CV", en: "Resume" })}
               </Nav.Link>
             </Nav.Item>
 
@@ -96,8 +98,12 @@ function NavBar() {
                 href="mailto:louey.barbirou@ynov.com?subject=Alternance%20Data%20%2F%20IA"
               >
                 <span className="arc-dot" />
-                DISPO · ALTERNANCE
+                {t({ fr: "DISPO · ALTERNANCE", en: "OPEN TO APPRENTICESHIP" })}
               </a>
+            </Nav.Item>
+
+            <Nav.Item>
+              <LangSwitch className="nav-lang" />
             </Nav.Item>
 
             {/* <Nav.Item>
