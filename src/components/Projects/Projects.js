@@ -66,7 +66,7 @@ function Projects() {
               imgPath={supplyPulse}
               isBlog={false}
               title="SupplyPulse — Supply Chain Analytics"
-              description="Mon projet data le plus poussé. J'ai pris un dataset réel (DataCo) pour analyser une chaîne logistique de bout en bout. J'ai monté un entrepôt en couches avec DuckDB (du brut aux tables prêtes à l'analyse), ajouté des tests de qualité des données qui tournent en CI, et un dashboard Streamlit avec les bons KPIs (retards, OTIF, marge, performance par marché)."
+              description="Mon projet data le plus poussé. J'ai pris un dataset réel (DataCo) pour analyser une chaîne logistique complète. J'ai monté un entrepôt en couches avec DuckDB (du brut aux tables prêtes à l'analyse), ajouté des tests de qualité des données qui tournent en CI, et un dashboard Streamlit avec les bons KPIs (retards, OTIF, marge, performance par marché)."
               ghLink="https://github.com/baluva/supplypulse"
             />
           </Col>
@@ -98,7 +98,7 @@ function Projects() {
               imgPath={videoInsight}
               isBlog={false}
               title="VideoInsight — Analyse Vidéo IA"
-              description="Ce que je développe en stage chez trITon : une appli qui prend une vidéo, la transcrit (Whisper), la traduit, génère les sous-titres et refait la voix (TTS). Pipeline en Python, avec de la CI sur GitHub Actions."
+              description="Ce que je développe en stage chez trITon : une appli qui prend une vidéo, la transcrit, la traduit, génère les sous-titres et refait la voix (TTS). Pipeline en Python, avec de la CI sur GitHub Actions."
               ghLink="https://github.com/baluva/subtitles"
             />
           </Col>
