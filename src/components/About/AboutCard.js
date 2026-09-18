@@ -16,9 +16,9 @@ function AboutCard() {
                 <br />
                 Je suis étudiant en IA & Data Science à Ynov. Ce qui me plaît, c'est prendre des données brutes et en tirer quelque chose d'utile — une analyse, un modèle, un dashboard.
                 <br />
-                En ce moment, je suis en <span className="purple">stage chez trITon</span> : je développe VideoInsight (analyse vidéo par IA) et je bosse sur la data.
+                Je viens de terminer mon <span className="purple">stage chez trITon</span> (avril – juillet 2026).
                 <br />
-                Avant, j'ai fait de l'analyse de sécurité (projet Thales) et de la BI chez Novogel.
+                Avant ça, j'ai fait de l'analyse de sécurité (projet Thales) et de la BI chez Novogel.
                 <br />
                 Ce qui m'intéresse, c'est le produit en entier : sa <span className="purple">scalabilité</span>, sa <span className="purple">maintenance</span>, ses <span className="purple">performances</span> et sa <span className="purple">sécurité</span>, jusqu'à l'infrastructure. Je suis polyvalent et à l'aise avec les outils de dev et les assistants IA ; le prompt engineering, je l'ai appris en construisant mes propres produits.
                 <br />
@@ -49,7 +49,7 @@ function AboutCard() {
                 <br />
                 I'm an AI & Data Science student at Ynov. What I enjoy is taking raw data and turning it into something useful: an analysis, a model, a dashboard.
                 <br />
-                Right now I'm an <span className="purple">intern at trITon</span>: I develop VideoInsight (AI-powered video analysis) and work on the data side.
+                I just finished my <span className="purple">internship at trITon</span> (April – July 2026).
                 <br />
                 Before that, I did security analysis (a Thales project) and BI at Novogel.
                 <br />
