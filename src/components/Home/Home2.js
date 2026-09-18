@@ -22,7 +22,7 @@ function Home2() {
                 Je suis en 3e année <b className="purple">IA &amp; Data Science</b> à Ynov Aix. En clair : je code en Python, je manipule des données et je monte des projets complets, du modèle de machine learning jusqu'au dashboard.
                 <br />
                 <br />
-                En ce moment, je suis en <b className="purple">stage chez trITon</b> : je développe <i>VideoInsight</i> (analyse vidéo par IA) et je m'occupe aussi de la partie data.
+                Je viens de terminer mon <b className="purple">stage chez trITon</b> (avril – juillet 2026).
                 <br />
                 <br />
                 Avant ça, j'ai touché à l'analyse de sécurité (projet Thales) et à la business intelligence chez Novogel.
@@ -41,7 +41,7 @@ function Home2() {
                 I'm a third-year <b className="purple">AI &amp; Data Science</b> student at Ynov Aix. In plain terms: I code in Python, I work with data and I build complete projects, from the machine learning model all the way to the dashboard.
                 <br />
                 <br />
-                Right now I'm an <b className="purple">intern at trITon</b>: I develop <i>VideoInsight</i> (AI-powered video analysis) and I also handle the data side.
+                I just finished my <b className="purple">internship at trITon</b> (April – July 2026).
                 <br />
                 <br />
                 Before that, I worked on security analysis (a Thales project) and business intelligence at Novogel.

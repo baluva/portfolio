@@ -93,8 +93,8 @@ const SECTIONS = [
           en: "VideoInsight — AI Video Analysis",
         },
         description: {
-          fr: "Ce que je développe en stage chez trITon : une appli qui prend une vidéo, la transcrit, la traduit, génère les sous-titres et refait la voix (TTS). Pipeline en Python, avec de la CI sur GitHub Actions.",
-          en: "What I'm building during my internship at trITon: an app that takes a video, transcribes it, translates it, generates the subtitles and re-creates the voice (TTS). Python pipeline, with CI on GitHub Actions.",
+          fr: "Ce que j'ai développé en stage chez trITon : une appli qui prend une vidéo, la transcrit, la traduit, génère les sous-titres et refait la voix (TTS). Pipeline en Python, avec de la CI sur GitHub Actions.",
+          en: "What I built during my internship at trITon: an app that takes a video, transcribes it, translates it, generates the subtitles and re-creates the voice (TTS). Python pipeline, with CI on GitHub Actions.",
         },
         ghLink: "https://github.com/baluva/subtitles",
       },
