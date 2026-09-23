@@ -1,10 +1,12 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.abec9e9f.css",
-    "main.js": "/portfolio/static/js/main.fd54cd95.js",
+    "main.js": "/portfolio/static/js/main.fb4ff96b.js",
     "static/js/415.4d6acbeb.chunk.js": "/portfolio/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/magic_autos.png": "/portfolio/static/media/magic_autos.dd13db7c11055aea58db.png",
+    "static/media/CV_Louey_Barbirou.pdf": "/portfolio/static/media/CV_Louey_Barbirou.5c86b474b5211f630d07.pdf",
+    "static/media/CV_Louey_Barbirou_EN.pdf": "/portfolio/static/media/CV_Louey_Barbirou_EN.3558f69ffccc7d98143b.pdf",
     "static/media/profile.jpg": "/portfolio/static/media/profile.9791a15f34d62a89efc8.jpg",
     "static/media/swarm_prediction.png": "/portfolio/static/media/swarm_prediction.22f3fe15f9cd0c92b741.png",
     "static/media/prompt_booster.png": "/portfolio/static/media/prompt_booster.7d319a72b07d0b7cddca.png",
@@ -15,8 +17,6 @@
     "static/media/supplypulse.png": "/portfolio/static/media/supplypulse.baa31fb53991c585fdbe.png",
     "static/media/dbug_hunter.png": "/portfolio/static/media/dbug_hunter.26bca6bf987c5f782ffc.png",
     "static/media/messi_analytics.png": "/portfolio/static/media/messi_analytics.dda6507d4e0435811011.png",
-    "static/media/CV_Louey_Barbirou.pdf": "/portfolio/static/media/CV_Louey_Barbirou.6cf8239eac31b67960b5.pdf",
-    "static/media/CV_Louey_Barbirou_EN.pdf": "/portfolio/static/media/CV_Louey_Barbirou_EN.5d90eb379df8c4371d91.pdf",
     "static/media/souk_bvmt.png": "/portfolio/static/media/souk_bvmt.ba3783f9ad95fb9fca29.png",
     "static/media/frost_days.png": "/portfolio/static/media/frost_days.c1e526bdda1453b89e9e.png",
     "static/media/insight_hub.png": "/portfolio/static/media/insight_hub.b1e1673b115043b5b0a7.png",
@@ -38,12 +38,12 @@
     "static/media/olist.svg": "/portfolio/static/media/olist.ede44484245418cf1cbe97bccd85bad7.svg",
     "static/media/ymmersion_web.svg": "/portfolio/static/media/ymmersion_web.195494298c1d69c0b218668fcc07ccdb.svg",
     "main.abec9e9f.css.map": "/portfolio/static/css/main.abec9e9f.css.map",
-    "main.fd54cd95.js.map": "/portfolio/static/js/main.fd54cd95.js.map",
+    "main.fb4ff96b.js.map": "/portfolio/static/js/main.fb4ff96b.js.map",
     "415.4d6acbeb.chunk.js.map": "/portfolio/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.abec9e9f.css",
-    "static/js/main.fd54cd95.js"
+    "static/js/main.fb4ff96b.js"
   ]
 }
