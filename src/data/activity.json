@@ -1,0 +1,582 @@
+{
+  "generatedAt": "2026-09-23T09:58:49.642Z",
+  "repos": {
+    "baluva/wattcast": {
+      "pushedAt": "2026-09-15T12:34:35Z",
+      "commits": [
+        {
+          "sha": "99571a7",
+          "message": "README : ordre des vérifications",
+          "date": "2026-09-15T12:34:32Z",
+          "url": "https://github.com/baluva/wattcast/commit/99571a7c1f39bbb5e27904c324ebe589da56fde4"
+        },
+        {
+          "sha": "451c52f",
+          "message": "Dashboard déployé sur Streamlit Community Cloud au lieu d'un Space HF",
+          "date": "2026-09-15T12:17:17Z",
+          "url": "https://github.com/baluva/wattcast/commit/451c52f6cd3a75edaa76a2bfb671efd93149fe2f"
+        },
+        {
+          "sha": "8bfafdd",
+          "message": "README avec résultats, correctif changement d'heure, dashboard en français",
+          "date": "2026-09-15T12:15:39Z",
+          "url": "https://github.com/baluva/wattcast/commit/8bfafddc604799da930a9441b94730e298500fc7"
+        },
+        {
+          "sha": "853cfce",
+          "message": "CI et pipeline quotidien GitHub Actions",
+          "date": "2026-09-15T12:05:40Z",
+          "url": "https://github.com/baluva/wattcast/commit/853cfce4443ca3f1d4d93a09fdac37e8c8faf9eb"
+        },
+        {
+          "sha": "2a9ddc0",
+          "message": "Dashboard Streamlit et Space Hugging Face",
+          "date": "2026-09-15T12:05:40Z",
+          "url": "https://github.com/baluva/wattcast/commit/2a9ddc0daabe1c7f48c70b1b9e535d0363d57f53"
+        }
+      ]
+    },
+    "baluva/supplypulse": {
+      "pushedAt": "2026-06-20T19:34:05Z",
+      "commits": [
+        {
+          "sha": "cdac7e9",
+          "message": "Bootstrap: l'app construit l'entrepot au 1er lancement (deploiement Streamlit Cloud) + liens sources data dans le README",
+          "date": "2026-06-20T19:34:02Z",
+          "url": "https://github.com/baluva/supplypulse/commit/cdac7e9e4cf1b0d338c377e94039d801b5815759"
+        },
+        {
+          "sha": "fe1b30f",
+          "message": "SupplyPulse : analytics supply chain sur donnees reelles DataCo",
+          "date": "2026-06-20T19:31:16Z",
+          "url": "https://github.com/baluva/supplypulse/commit/fe1b30f3d36a965d7d35bddcaf3200fd0d8ed0d6"
+        }
+      ]
+    },
+    "baluva/prompt-booster": {
+      "pushedAt": "2026-09-23T09:51:35Z",
+      "commits": [
+        {
+          "sha": "c00fabe",
+          "message": "Moteur v2 : grille de notation honnête, questions de contexte, styles XML/texte, tests + CI",
+          "date": "2026-09-23T09:51:32Z",
+          "url": "https://github.com/baluva/prompt-booster/commit/c00fabe6a0f648c92c3f927d31a84ba958e831da"
+        },
+        {
+          "sha": "d2636ec",
+          "message": "Prompt Booster : moteur d'amelioration de prompts (regles) + interface web Streamlit",
+          "date": "2026-06-20T18:50:17Z",
+          "url": "https://github.com/baluva/prompt-booster/commit/d2636ece6f397782aba9c952cd267f7173c1c449"
+        }
+      ]
+    },
+    "baluva/dbug-hunter": {
+      "pushedAt": "2026-06-18T11:42:51Z",
+      "commits": [
+        {
+          "sha": "328fea3",
+          "message": "Landing en page d'accueil, scanner déplacé sur /app",
+          "date": "2026-06-18T11:42:49Z",
+          "url": "https://github.com/baluva/dbug-hunter/commit/328fea3462424546a96ac81e78710d920ecf82ed"
+        },
+        {
+          "sha": "ef8649f",
+          "message": "Ajout d'une landing page (style émeraude/bleu, Inter, scroll-reveal)",
+          "date": "2026-06-18T11:39:30Z",
+          "url": "https://github.com/baluva/dbug-hunter/commit/ef8649f5d5cf4641f58251a56ba50da3af262aa1"
+        },
+        {
+          "sha": "c8f57b6",
+          "message": "README: lien vers la démo en ligne (Hugging Face Space)",
+          "date": "2026-06-18T07:53:34Z",
+          "url": "https://github.com/baluva/dbug-hunter/commit/c8f57b6cd8e2f39a5f71943df07831dd4d230117"
+        },
+        {
+          "sha": "3f28aff",
+          "message": "Fix Dockerfile: chown /app pour l'utilisateur non-root (build HF Spaces)",
+          "date": "2026-06-18T07:50:30Z",
+          "url": "https://github.com/baluva/dbug-hunter/commit/3f28aff607b039f3bc657cff9e6d81b6a2d8bbdd"
+        },
+        {
+          "sha": "486bcee",
+          "message": "Ajout du Dockerfile pour déploiement (Hugging Face Spaces)",
+          "date": "2026-06-18T07:39:44Z",
+          "url": "https://github.com/baluva/dbug-hunter/commit/486bceed24ad39ed8b78193ddd162ebe6c7c6ef7"
+        }
+      ]
+    },
+    "baluva/subtitles": {
+      "pushedAt": "2026-08-20T14:33:09Z",
+      "commits": [
+        {
+          "sha": "37f1a95",
+          "message": "feat: assistant conversationnel + tableau d'indicateurs (analytics)",
+          "date": "2026-08-20T14:33:04Z",
+          "url": "https://github.com/baluva/subtitles/commit/37f1a955d0ea723ccf80680adbe049040b810949"
+        },
+        {
+          "sha": "f296200",
+          "message": "Merge pull request #1 from baluva/fix/ci-dependances",
+          "date": "2026-08-12T17:23:41Z",
+          "url": "https://github.com/baluva/subtitles/commit/f2962009eb2591a5f1d2ee1990eb593c95251d85"
+        },
+        {
+          "sha": "7afe320",
+          "message": "fix(ci): declare les dependances manquantes pour l installation propre",
+          "date": "2026-08-12T17:16:33Z",
+          "url": "https://github.com/baluva/subtitles/commit/7afe3208ee3c9b7e1ddda60746f711d89426e42e"
+        },
+        {
+          "sha": "2844201",
+          "message": "feat(tts): voix Multilingual recentes + choix homme/femme, perf lecteur",
+          "date": "2026-07-20T09:25:23Z",
+          "url": "https://github.com/baluva/subtitles/commit/28442018aa9ce8ce8f4e740a97559d67054dfafe"
+        },
+        {
+          "sha": "fe38c4b",
+          "message": "feat(chapitres): chapitrage automatique par scene + export YouTube",
+          "date": "2026-07-20T09:25:22Z",
+          "url": "https://github.com/baluva/subtitles/commit/fe38c4b36d03ef75178275c4feaa132a8dde5eb1"
+        }
+      ]
+    },
+    "baluva/heart_attack_Prediction": {
+      "pushedAt": "2026-06-18T08:22:39Z",
+      "commits": [
+        {
+          "sha": "7d20c3e",
+          "message": "Initial commit: Heart Attack Prediction ML Project",
+          "date": "2026-01-29T12:11:51Z",
+          "url": "https://github.com/baluva/heart_attack_Prediction/commit/7d20c3eecb434d13f6bbe6c67c0777b99a527328"
+        }
+      ]
+    },
+    "baluva/student_depression": {
+      "pushedAt": "2026-06-18T11:48:42Z",
+      "commits": [
+        {
+          "sha": "b9bbeb5",
+          "message": "Fix dashboard pandas 2.x bug, add requirements.txt, document dataset + Streamlit app in README",
+          "date": "2026-06-18T10:12:02Z",
+          "url": "https://github.com/baluva/student_depression/commit/b9bbeb57cb5ee7ab71b445b4b14914c9d7e170b6"
+        },
+        {
+          "sha": "aa551bf",
+          "message": "Initial commit of Student Depression Analysis project by Louey Barbirou (LB)",
+          "date": "2026-01-30T10:20:40Z",
+          "url": "https://github.com/baluva/student_depression/commit/aa551bfc20801ddc1ab17c86fa3f625615d8b684"
+        }
+      ]
+    },
+    "baluva/Trade-with-AI": {
+      "pushedAt": "2026-06-18T11:48:43Z",
+      "commits": [
+        {
+          "sha": "39e6bef",
+          "message": "Fix outdated test_all.py (drop removed sentiment module, correct run hints); correct indicators line in README",
+          "date": "2026-06-18T10:13:39Z",
+          "url": "https://github.com/baluva/Trade-with-AI/commit/39e6bef11c543e748155d1b6112022c565f5add6"
+        },
+        {
+          "sha": "9a6f712",
+          "message": "Fix: Unpin dependencies to allow Vercel/uv resolution",
+          "date": "2026-02-19T09:03:40Z",
+          "url": "https://github.com/baluva/Trade-with-AI/commit/9a6f7127360c60f41e94f53cb32c3b5961c55e74"
+        },
+        {
+          "sha": "6ee8ab7",
+          "message": "Fix: Remove unused 'ta' library (fixes Vercel build error)",
+          "date": "2026-02-19T09:01:59Z",
+          "url": "https://github.com/baluva/Trade-with-AI/commit/6ee8ab7d7ac14afba06f5d7c9dc6868645642ca9"
+        },
+        {
+          "sha": "3ff1f23",
+          "message": "Perf: Optimize Prophet (0 uncertainty, 90d history) for Vercel timeout",
+          "date": "2026-02-19T08:42:49Z",
+          "url": "https://github.com/baluva/Trade-with-AI/commit/3ff1f23507173585d73e310883a4bc596ec973d0"
+        },
+        {
+          "sha": "d16c9e6",
+          "message": "Fix: use /tmp for cache to avoid Read-Only FS error on Vercel",
+          "date": "2026-02-19T08:38:38Z",
+          "url": "https://github.com/baluva/Trade-with-AI/commit/d16c9e64f173a69ec9bfb59582f4aa102bc3f30b"
+        }
+      ]
+    },
+    "baluva/Data-Analysis-Obesity-Levels-Lifestyle-Habits": {
+      "pushedAt": "2026-06-18T11:48:30Z",
+      "commits": [
+        {
+          "sha": "83d1aca",
+          "message": "Add requirements.txt and reference it in README",
+          "date": "2026-06-18T10:12:02Z",
+          "url": "https://github.com/baluva/Data-Analysis-Obesity-Levels-Lifestyle-Habits/commit/83d1aca052a37c79356024150248c447242148fc"
+        },
+        {
+          "sha": "bd6ea41",
+          "message": "Initial commit: EDA Obesity Levels & Lifestyle Habits",
+          "date": "2026-02-17T18:33:11Z",
+          "url": "https://github.com/baluva/Data-Analysis-Obesity-Levels-Lifestyle-Habits/commit/bd6ea4191dabe9f5830df4fa90602316a80cf20c"
+        }
+      ]
+    },
+    "2Alexis/Swarm_Prediction": {
+      "pushedAt": "2026-08-13T17:27:52Z",
+      "commits": [
+        {
+          "sha": "a6ca1fd",
+          "message": "fix: reparer le noyau causal (sd_core casse + cascade jamais active) et corriger l'audit technique complet",
+          "date": "2026-08-13T17:27:31Z",
+          "url": "https://github.com/2Alexis/Swarm_Prediction/commit/a6ca1fd0f651261f7c9dd260a5c2e7b57aa4847d"
+        },
+        {
+          "sha": "1b7d943",
+          "message": "feat: complete satellite HUD targeting system, unified cyberpunk DA, vertical flexbox stacking, dynamic GDP PPP annual lookup, and sea/ocean geocoding",
+          "date": "2026-07-31T22:15:08Z",
+          "url": "https://github.com/2Alexis/Swarm_Prediction/commit/1b7d94307d696f3e463dbb0d530b58b3b700b700"
+        },
+        {
+          "sha": "c921ec3",
+          "message": "Update globe image in README.md",
+          "date": "2026-07-28T23:01:08Z",
+          "url": "https://github.com/2Alexis/Swarm_Prediction/commit/c921ec357eba149d9a9445df82ac3b9acc64941f"
+        },
+        {
+          "sha": "b58e5cf",
+          "message": "Modify interactive globe image in README",
+          "date": "2026-07-28T22:59:07Z",
+          "url": "https://github.com/2Alexis/Swarm_Prediction/commit/b58e5cfcca1e1a369e847046e4913bdbc102012e"
+        },
+        {
+          "sha": "ff5ec54",
+          "message": "globe: echelle adaptative des points (radiusMinPixels/MaxPixels reduits, opacite abaissee), refonte visuelle Sci-Fi (glassmorphism, atmosphere neon, vignette, boutons cyberpunk, palette choroplethe fluide)",
+          "date": "2026-07-28T22:54:47Z",
+          "url": "https://github.com/2Alexis/Swarm_Prediction/commit/ff5ec540d15518d55757048f36447d29e4cab3e9"
+        }
+      ]
+    },
+    "baluva/techYnov": {
+      "pushedAt": "2026-06-30T09:25:20Z",
+      "commits": [
+        {
+          "sha": "b78fc1d",
+          "message": "IA : optimisation latence (params phi3-financial) + eval report + captures",
+          "date": "2026-06-30T09:25:17Z",
+          "url": "https://github.com/baluva/techYnov/commit/b78fc1d44ecee9de2ac83cf3a5802623c01a4dd9"
+        },
+        {
+          "sha": "e15b51d",
+          "message": "Interface : URL par defaut sur le proxy (8080) pour un demarrage sans reglage",
+          "date": "2026-06-30T09:03:43Z",
+          "url": "https://github.com/baluva/techYnov/commit/e15b51d2f47bd527fd3523677bff1b4956b32c05"
+        },
+        {
+          "sha": "cf118a5",
+          "message": "Rendu complet 5 filieres + tests robustesse + oral",
+          "date": "2026-06-30T08:51:53Z",
+          "url": "https://github.com/baluva/techYnov/commit/cf118a5b7124f44f066a0e0f5ed36e78cdc36c92"
+        },
+        {
+          "sha": "8b71cf5",
+          "message": "Audit exhaustif + 2 LoRA entraines (POC local CPU)",
+          "date": "2026-06-30T08:45:01Z",
+          "url": "https://github.com/baluva/techYnov/commit/8b71cf5c9df208e5241ad280c6fe20c0d0a60b74"
+        },
+        {
+          "sha": "1bac0b5",
+          "message": "Interface : adoption de l'UI single-file fournie (HTML + proxy.py)",
+          "date": "2026-06-30T08:36:27Z",
+          "url": "https://github.com/baluva/techYnov/commit/1bac0b511bd6c36121ddae0bcba27f37504b6cdb"
+        }
+      ]
+    },
+    "baluva/bac-quiz": {
+      "pushedAt": "2026-06-23T12:14:24Z",
+      "commits": [
+        {
+          "sha": "a7532c5",
+          "message": "Bilan de la nuit dans NIGHT_LOG (récap des 5 améliorations Bac Quiz)",
+          "date": "2026-06-23T02:06:16Z",
+          "url": "https://github.com/baluva/bac-quiz/commit/a7532c5e7a1bc8791dd40e8fcdb2ecc8df0f0bf8"
+        },
+        {
+          "sha": "c36619e",
+          "message": "Nettoyage : retrait de la règle CSS morte .tag.qcm",
+          "date": "2026-06-23T02:02:15Z",
+          "url": "https://github.com/baluva/bac-quiz/commit/c36619e1c2ac971ccefedfa1758385977c81be7d"
+        },
+        {
+          "sha": "df9c761",
+          "message": "Micro-interactions : feedback réponse (pop/shake), retour tactile au clic, spinner de chargement",
+          "date": "2026-06-23T01:49:58Z",
+          "url": "https://github.com/baluva/bac-quiz/commit/df9c761afefeea45fa25f4e9eeb07f1a97892aed"
+        },
+        {
+          "sha": "22d1eb2",
+          "message": "Accessibilité : libellés ARIA (bouton fermer, recherche, filtres) + aria-current sur l'onglet actif",
+          "date": "2026-06-23T01:46:02Z",
+          "url": "https://github.com/baluva/bac-quiz/commit/22d1eb26ca279b3525f040ee66c285acd53fd82c"
+        },
+        {
+          "sha": "dfb6f43",
+          "message": "Polish UI mobile : recherche pleine largeur + média 600px enrichi",
+          "date": "2026-06-23T01:40:10Z",
+          "url": "https://github.com/baluva/bac-quiz/commit/dfb6f4354c6353fecf64372e029a5934a05fe295"
+        }
+      ]
+    },
+    "baluva/code-route-tn": {
+      "pushedAt": "2026-06-23T12:14:30Z",
+      "commits": [
+        {
+          "sha": "45beb04",
+          "message": "Retire le dossier scraper du dépôt (pipeline de données géré hors dépôt)",
+          "date": "2026-06-21T01:17:34Z",
+          "url": "https://github.com/baluva/code-route-tn/commit/45beb046fc35b6f64e2070b9e8343f29db0b71af"
+        },
+        {
+          "sha": "cf474d5",
+          "message": "SEO: balise de vérification Google Search Console",
+          "date": "2026-06-21T00:40:40Z",
+          "url": "https://github.com/baluva/code-route-tn/commit/cf474d55af66a3d8f8a71ca241e68ab3960552c6"
+        },
+        {
+          "sha": "ff216ea",
+          "message": "SEO: autoriser l'indexation (robots/meta), Open Graph, sitemap, titre/description et texte crawlable",
+          "date": "2026-06-21T00:33:56Z",
+          "url": "https://github.com/baluva/code-route-tn/commit/ff216ea23c6574a2010e02e4c6b2a80cbcd1477e"
+        },
+        {
+          "sha": "6865613",
+          "message": "Code Route TN — entraînement au code de la route tunisien (multi-catégories, bilingue FR/AR, examens VIP)",
+          "date": "2026-06-21T00:22:13Z",
+          "url": "https://github.com/baluva/code-route-tn/commit/6865613d308e88799b6d5af5b75dd59b3f36ac06"
+        }
+      ]
+    },
+    "baluva/tunis-bourse": {
+      "pushedAt": "2026-08-07T14:49:54Z",
+      "commits": [
+        {
+          "sha": "d138bbd",
+          "message": "Souk - jeu de trading sur les cours reels de la Bourse de Tunis (BVMT)",
+          "date": "2026-08-07T14:49:48Z",
+          "url": "https://github.com/baluva/tunis-bourse/commit/d138bbd890da1422641dcfa4e1e50955de08700d"
+        }
+      ]
+    },
+    "baluva/maps-prospector": {
+      "pushedAt": "2026-08-07T14:50:15Z",
+      "commits": [
+        {
+          "sha": "909b97f",
+          "message": "Maps Prospector - collecte de prospects Google Places et campagne email Outlook",
+          "date": "2026-08-07T14:50:10Z",
+          "url": "https://github.com/baluva/maps-prospector/commit/909b97fc2aa7ab5b3c36b4a32af76451a9f3bf26"
+        }
+      ]
+    },
+    "baluva/frost-days": {
+      "pushedAt": "2026-07-01T12:19:29Z",
+      "commits": [
+        {
+          "sha": "357842d",
+          "message": "Ajoute une capture du dashboard dans le README",
+          "date": "2026-07-01T12:07:33Z",
+          "url": "https://github.com/baluva/frost-days/commit/357842d7c88f36a16f175bfd232a5e75b0b11a8a"
+        },
+        {
+          "sha": "f5c7682",
+          "message": "Utilise la bibliotheque haversine au lieu de la formule codee a la main",
+          "date": "2026-07-01T12:01:25Z",
+          "url": "https://github.com/baluva/frost-days/commit/f5c7682ce7a037b7eb480db6a5f767bb5ad0bcd4"
+        },
+        {
+          "sha": "2e46e3c",
+          "message": "Validation : archive ZIP de remise (6 communes + referentiels _complete.csv + rapport VALIDATION.md)",
+          "date": "2026-06-26T07:03:42Z",
+          "url": "https://github.com/baluva/frost-days/commit/2e46e3ce43cd6be07806addd03a93fcc81ce8756"
+        },
+        {
+          "sha": "148e9a9",
+          "message": "Docs & présentation : CODE.md, script HTML, assets, notebook exploration",
+          "date": "2026-06-25T14:35:54Z",
+          "url": "https://github.com/baluva/frost-days/commit/148e9a9fab9a84461388f4af96da5895c77362eb"
+        },
+        {
+          "sha": "f7dffa4",
+          "message": "Validation V2 : fichiers _complete.csv (6 communes 100%, stations_df 2965, city_df 34863) + build_validation.py",
+          "date": "2026-06-25T14:02:48Z",
+          "url": "https://github.com/baluva/frost-days/commit/f7dffa4d06b59c64c7685c91ced69635cca88cc4"
+        }
+      ]
+    },
+    "baluva/sawtna": {
+      "pushedAt": "2026-08-07T14:50:04Z",
+      "commits": [
+        {
+          "sha": "35f7109",
+          "message": "Sawtna - place publique civique tunisienne (projets, debats, verification CIN)",
+          "date": "2026-08-07T14:49:59Z",
+          "url": "https://github.com/baluva/sawtna/commit/35f7109036a426eefdd91468dd8a26eb00ed300e"
+        }
+      ]
+    },
+    "baluva/projetdev_loueyBarbirou": {
+      "pushedAt": "2026-06-18T11:48:35Z",
+      "commits": [
+        {
+          "sha": "dae4341",
+          "message": "Rewrite README (Puissance 4 matchmaking, Tkinter), fix requirements (drop unused pygame/pillow/reportlab), untrack runtime logs",
+          "date": "2026-06-18T10:15:33Z",
+          "url": "https://github.com/baluva/projetdev_loueyBarbirou/commit/dae4341e0c099e1e581b5845b23108f9559c6f38"
+        },
+        {
+          "sha": "af5471e",
+          "message": "Add files via upload",
+          "date": "2025-05-12T15:49:54Z",
+          "url": "https://github.com/baluva/projetdev_loueyBarbirou/commit/af5471e766c0ffdae7f921bcc19d46895f5542e0"
+        },
+        {
+          "sha": "f612f85",
+          "message": "Add files via upload",
+          "date": "2025-05-12T15:49:06Z",
+          "url": "https://github.com/baluva/projetdev_loueyBarbirou/commit/f612f8559814c835ed4eb24b1d646d31a8071938"
+        },
+        {
+          "sha": "5bde1d5",
+          "message": "Add files via upload",
+          "date": "2025-05-12T15:47:55Z",
+          "url": "https://github.com/baluva/projetdev_loueyBarbirou/commit/5bde1d505372f72c150e7a558291d3746415d271"
+        },
+        {
+          "sha": "81af0c2",
+          "message": "Initial commit",
+          "date": "2025-05-12T15:40:54Z",
+          "url": "https://github.com/baluva/projetdev_loueyBarbirou/commit/81af0c29eb2fc273f74b5a1e252c3c6afa9231dc"
+        }
+      ]
+    },
+    "baluva/louey-barbirou-groupietracker": {
+      "pushedAt": "2026-06-18T11:48:34Z",
+      "commits": [
+        {
+          "sha": "d221473",
+          "message": "Move CoinMarketCap API key to env var; add README, .gitignore, .env.example",
+          "date": "2026-06-18T10:21:29Z",
+          "url": "https://github.com/baluva/louey-barbirou-groupietracker/commit/d221473793d3619d5cbe10f97bf765043101aed6"
+        },
+        {
+          "sha": "33c6a2c",
+          "message": "step 2",
+          "date": "2024-03-26T23:57:58Z",
+          "url": "https://github.com/baluva/louey-barbirou-groupietracker/commit/33c6a2cd186ea33a160066276569107cc5666b42"
+        },
+        {
+          "sha": "34c7cca",
+          "message": "ss",
+          "date": "2024-03-21T11:24:15Z",
+          "url": "https://github.com/baluva/louey-barbirou-groupietracker/commit/34c7ccaf4f15bfd84cf91628178567718da41dde"
+        },
+        {
+          "sha": "06b5088",
+          "message": "Initial commit",
+          "date": "2024-03-21T07:59:04Z",
+          "url": "https://github.com/baluva/louey-barbirou-groupietracker/commit/06b50889107086ac8aa77f0347c041774347dbf9"
+        }
+      ]
+    },
+    "baluva/Barbirou-Tichit-Red": {
+      "pushedAt": "2026-06-18T11:48:27Z",
+      "commits": [
+        {
+          "sha": "d4b2d0f",
+          "message": "Add README and Go .gitignore; untrack committed red.exe binary",
+          "date": "2026-06-18T10:24:40Z",
+          "url": "https://github.com/baluva/Barbirou-Tichit-Red/commit/d4b2d0ff2249f95eee8e99c5e7d3fa70c53ddbaa"
+        },
+        {
+          "sha": "a3bd752",
+          "message": "Add files via upload",
+          "date": "2023-09-29T06:37:59Z",
+          "url": "https://github.com/baluva/Barbirou-Tichit-Red/commit/a3bd7527e0750c93ace61bbb5d71f757edc911ed"
+        },
+        {
+          "sha": "4721b80",
+          "message": "projet final red LOUEY/JOHAN",
+          "date": "2023-09-28T21:08:30Z",
+          "url": "https://github.com/baluva/Barbirou-Tichit-Red/commit/4721b80b10960290cf7c2598f437235b172991e5"
+        },
+        {
+          "sha": "9ffab3c",
+          "message": "projet final red LOUEY/JOHAN",
+          "date": "2023-09-28T21:01:54Z",
+          "url": "https://github.com/baluva/Barbirou-Tichit-Red/commit/9ffab3cf6253b810b480e7a25625bd5b7d8b77ab"
+        },
+        {
+          "sha": "3fb70e1",
+          "message": " 9/28/2023",
+          "date": "2023-09-28T14:28:29Z",
+          "url": "https://github.com/baluva/Barbirou-Tichit-Red/commit/3fb70e18c88497428a82891338a2d61ffd52fbed"
+        }
+      ]
+    },
+    "baluva/Rendue-TP-exploitation-API-Spotify-v2": {
+      "pushedAt": "2026-06-18T11:48:40Z",
+      "commits": [
+        {
+          "sha": "e243b9d",
+          "message": "Cache du token Spotify, garde anti-panic, vraie date de sortie, timeout HTTP",
+          "date": "2026-06-18T11:40:03Z",
+          "url": "https://github.com/baluva/Rendue-TP-exploitation-API-Spotify-v2/commit/e243b9d523e002955f2e19f4a04337c16ebd9988"
+        },
+        {
+          "sha": "f8880f0",
+          "message": "Move Spotify creds to env vars, rewrite README (was UTF-16), add .gitignore/.env.example, untrack .vscode",
+          "date": "2026-06-18T10:21:30Z",
+          "url": "https://github.com/baluva/Rendue-TP-exploitation-API-Spotify-v2/commit/f8880f07c4c65164d413191843be919979fe73a0"
+        },
+        {
+          "sha": "6dd30ee",
+          "message": "commit",
+          "date": "2024-01-11T08:46:43Z",
+          "url": "https://github.com/baluva/Rendue-TP-exploitation-API-Spotify-v2/commit/6dd30ee809445edd5e9d75f8c86fe26476c442d6"
+        }
+      ]
+    },
+    "baluva/Ymmrsion2": {
+      "pushedAt": "2026-06-18T11:48:49Z",
+      "commits": [
+        {
+          "sha": "5e21a41",
+          "message": "Add proper README.md and Go .gitignore; remove redundant readme.Txt",
+          "date": "2026-06-18T10:21:30Z",
+          "url": "https://github.com/baluva/Ymmrsion2/commit/5e21a411123ef7734274fed2da6046ea98889eee"
+        },
+        {
+          "sha": "4155eb6",
+          "message": "Update readme.Txt",
+          "date": "2024-01-21T21:08:23Z",
+          "url": "https://github.com/baluva/Ymmrsion2/commit/4155eb6226ddf8533a9f33fb76a52c911df47068"
+        },
+        {
+          "sha": "69ae5ae",
+          "message": "last commit",
+          "date": "2024-01-21T21:02:11Z",
+          "url": "https://github.com/baluva/Ymmrsion2/commit/69ae5ae61199d20836590ab2e6abd70aa41e1f78"
+        }
+      ]
+    },
+    "baluva/scandiag-facom-reemploi": {
+      "pushedAt": "2026-08-20T16:18:31Z",
+      "commits": [
+        {
+          "sha": "cde3e74",
+          "message": "Dossier réemploi RSE du FACOM SCANDIAG (concours Ynov Aix) : rétro-ingénierie complète, dossier, code, datasheets et preuves",
+          "date": "2026-06-29T13:37:53Z",
+          "url": "https://github.com/baluva/scandiag-facom-reemploi/commit/cde3e74a8ceceb7c36227337f3d2a46cc875ad6b"
+        }
+      ]
+    }
+  }
+}

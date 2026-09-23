@@ -407,3 +407,46 @@ button:focus { box-shadow: none !important; }
 @media (max-width: 767px) {
   .nav-lang { margin: 8px 0 4px; }
 }
+
+/* ---------- Projets : filtre, tri, statut, dernières modifs ---------- */
+.proj-toolbar { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin: 22px 0 6px; }
+.proj-seg {
+  display: inline-flex; padding: 3px;
+  border: 1px solid var(--line-strong); border-radius: 999px; background: var(--surface);
+}
+.proj-seg button {
+  border: 0; background: transparent; color: var(--muted);
+  font: 600 0.85rem 'Space Grotesk', sans-serif;
+  padding: 6px 14px; border-radius: 999px; cursor: pointer;
+  transition: color .15s ease, background .15s ease;
+}
+.proj-seg button:hover { color: var(--text); }
+.proj-seg button.active { background: var(--accent); color: var(--bg); }
+.proj-seg button:focus-visible, .proj-changes-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.proj-hint { color: var(--muted) !important; font-size: 0.92rem; margin: 10px 0 0; }
+
+.proj-status { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; margin-bottom: 10px; text-align: left; }
+.proj-live {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-size: 0.78rem; font-weight: 600; color: var(--accent);
+  border: 1px solid rgba(196, 242, 78, 0.45); background: var(--accent-soft);
+  border-radius: 999px; padding: 3px 10px;
+}
+.proj-live i { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 3px rgba(196, 242, 78, 0.18); }
+.proj-updated { font-size: 0.8rem; color: var(--muted); }
+
+.proj-changes { margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--line); text-align: left; }
+.proj-changes-toggle {
+  border: 0; background: none; padding: 0; cursor: pointer;
+  color: var(--text); font-size: 0.86rem; font-weight: 600;
+  text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--line-strong);
+}
+.proj-changes-toggle:hover { color: var(--accent); }
+.proj-commits { list-style: none; margin: 10px 0 0; padding: 0; transition: opacity .2s ease; }
+.proj-commits.is-loading { opacity: 0.55; }
+.proj-commits li { padding: 7px 0 7px 12px; border-left: 2px solid var(--line-strong); font-size: 0.84rem; line-height: 1.45; }
+.proj-commits li:first-child { border-left-color: var(--accent); }
+.proj-commits a { color: var(--text) !important; text-decoration: none; display: block; }
+.proj-commits a:hover { color: var(--accent) !important; }
+.proj-commits span { color: var(--muted); font-size: 0.76rem; }
+.proj-commits code { color: var(--muted); font-size: 0.74rem; }

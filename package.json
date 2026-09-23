@@ -28,7 +28,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "activity": "node scripts/fetch-activity.js",
+    "predeploy": "npm run activity && npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {

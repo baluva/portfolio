@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import { useLang } from "../../i18n";
+import { repoFromLink, activityFor, lastUpdateOf } from "./activity";
 import heartAttack from "../../Assets/Projects/heart_attack.png";
 import messiAnalytics from "../../Assets/Projects/messi_analytics.png";
 import spotifApi from "../../Assets/Projects/spotifapi.png";
@@ -32,6 +33,7 @@ import sawtna from "../../Assets/Projects/sawtna.png";
 import mapsProspector from "../../Assets/Projects/maps_prospector.svg";
 
 // Chaque carte a son titre et sa description en français et en anglais.
+// live: true = site réellement en ligne et utilisable (vérifié à la main).
 const SECTIONS = [
   {
     title: { fr: "IA & Data Science", en: "AI & Data Science" },
@@ -85,6 +87,7 @@ const SECTIONS = [
         },
         ghLink: "https://github.com/baluva/dbug-hunter",
         demoLink: "https://louey9999-dbug-hunter.hf.space",
+        live: true,
       },
       {
         imgPath: videoInsight,
@@ -205,6 +208,7 @@ const SECTIONS = [
         },
         ghLink: "https://github.com/baluva/bac-quiz",
         demoLink: "https://bacquiz-tn.netlify.app",
+        live: true,
       },
       {
         imgPath: codeRouteTn,
@@ -218,6 +222,7 @@ const SECTIONS = [
         },
         ghLink: "https://github.com/baluva/code-route-tn",
         demoLink: "https://code-route-tn.pages.dev",
+        live: true,
       },
       {
         imgPath: soukBvmt,
@@ -271,6 +276,7 @@ const SECTIONS = [
           en: "A showcase website for a real client: Magic Autos, a garage in Manouba (Tunisia) doing car detailing, mechanics and a showroom. Built with Alexis in React / Vite, with a Cloudflare Workers + D1 database backend: admin panel to edit wash prices and stats, one-click quotes via WhatsApp, photo gallery with full-screen zoom, a \"10th wash free\" loyalty card and a real-time open / closed badge. Deployed on Cloudflare.",
         },
         demoLink: "https://magic-autos-tunisie.loueybarbirou12.workers.dev",
+        live: true,
       },
       {
         imgPath: sawtna,
@@ -362,8 +368,55 @@ const SECTIONS = [
   },
 ];
 
+const ALL_PROJECTS = SECTIONS.flatMap((section) => section.projects);
+const LIVE_COUNT = ALL_PROJECTS.filter((p) => p.live).length;
+
+function renderCard(p, t) {
+  const repo = repoFromLink(p.ghLink);
+  return (
+    <Col md={4} className="project-card" key={p.title.en}>
+      <ProjectCard
+        imgPath={p.imgPath}
+        isBlog={false}
+        title={t(p.title)}
+        description={t(p.description)}
+        ghLink={p.ghLink}
+        demoLink={p.demoLink}
+        live={p.live}
+        repo={repo}
+        activity={activityFor(repo)}
+      />
+    </Col>
+  );
+}
+
+function Segmented({ label, value, options, onChange }) {
+  return (
+    <div className="proj-seg" role="group" aria-label={label}>
+      {options.map((o) => (
+        <button
+          key={o.value}
+          type="button"
+          className={value === o.value ? "active" : ""}
+          aria-pressed={value === o.value}
+          onClick={() => onChange(o.value)}
+        >
+          {o.label}
+        </button>
+      ))}
+    </div>
+  );
+}
+
 function Projects() {
   const { t } = useLang();
+  const [show, setShow] = useState("all");        // all | live
+  const [order, setOrder] = useState("category"); // category | recent
+
+  const visible = ALL_PROJECTS.filter((p) => show === "all" || p.live);
+  if (order === "recent") {
+    visible.sort((a, b) => lastUpdateOf(repoFromLink(b.ghLink)) - lastUpdateOf(repoFromLink(a.ghLink)));
+  }
 
   return (
     <Container fluid className="project-section">
@@ -383,30 +436,55 @@ function Projects() {
           })}
         </p>
 
-        {SECTIONS.map((section, si) => (
-          <React.Fragment key={section.title.en}>
-            <h3
-              className="purple"
-              style={{ marginTop: si === 0 ? "10px" : "30px", marginBottom: "20px" }}
-            >
-              {t(section.title)}
-            </h3>
-            <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-              {section.projects.map((p) => (
-                <Col md={4} className="project-card" key={p.title.en}>
-                  <ProjectCard
-                    imgPath={p.imgPath}
-                    isBlog={false}
-                    title={t(p.title)}
-                    description={t(p.description)}
-                    ghLink={p.ghLink}
-                    demoLink={p.demoLink}
-                  />
-                </Col>
-              ))}
-            </Row>
-          </React.Fragment>
-        ))}
+        <div className="proj-toolbar">
+          <Segmented
+            label={t({ fr: "Afficher", en: "Show" })}
+            value={show}
+            onChange={setShow}
+            options={[
+              { value: "all", label: t({ fr: `Tous (${ALL_PROJECTS.length})`, en: `All (${ALL_PROJECTS.length})` }) },
+              { value: "live", label: t({ fr: `En production (${LIVE_COUNT})`, en: `In production (${LIVE_COUNT})` }) },
+            ]}
+          />
+          <Segmented
+            label={t({ fr: "Trier", en: "Sort" })}
+            value={order}
+            onChange={setOrder}
+            options={[
+              { value: "category", label: t({ fr: "Par catégorie", en: "By category" }) },
+              { value: "recent", label: t({ fr: "Modifiés récemment", en: "Recently updated" }) },
+            ]}
+          />
+        </div>
+        {show === "live" && (
+          <p className="proj-hint">
+            {t({
+              fr: "Ces sites sont en ligne et utilisables dès maintenant.",
+              en: "These sites are live and usable right now.",
+            })}
+          </p>
+        )}
+
+        {/* Filtre ou tri actif : une seule grille ; sinon, les sections par catégorie. */}
+        {show === "live" || order === "recent" ? (
+          <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+            {visible.map((p) => renderCard(p, t))}
+          </Row>
+        ) : (
+          SECTIONS.map((section, si) => (
+            <React.Fragment key={section.title.en}>
+              <h3
+                className="purple"
+                style={{ marginTop: si === 0 ? "10px" : "30px", marginBottom: "20px" }}
+              >
+                {t(section.title)}
+              </h3>
+              <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+                {section.projects.map((p) => renderCard(p, t))}
+              </Row>
+            </React.Fragment>
+          ))
+        )}
       </Container>
     </Container>
   );
