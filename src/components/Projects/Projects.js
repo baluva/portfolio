@@ -73,7 +73,6 @@ const SECTIONS = [
           en: "You paste a quickly written prompt and the app rewrites it properly (role, context, expected format, constraints) so the AI better understands what you want. It's all Python and rule-based: no API key, it works offline. It detects the task type and the language, and scores the quality before / after. Streamlit interface. Building this tool is how I learned prompt engineering, which I've reused in my other products since.",
         },
         ghLink: "https://github.com/baluva/prompt-booster",
-        demoLink: "https://prompt-booster.streamlit.app",
       },
       {
         imgPath: dbugHunter,
