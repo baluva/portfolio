@@ -19,7 +19,7 @@ function Home2() {
             </h1>
             {lang === "fr" ? (
               <p className="home-about-body">
-                Je suis en 3e année <b className="purple">IA &amp; Data Science</b> à Ynov Aix. En clair : je code en Python, je manipule des données et je monte des projets complets, du modèle de machine learning jusqu'au dashboard.
+                Je suis en M1 Mastère <b className="purple">Expert en IA</b> à Ynov Aix. En clair : je code en Python, je manipule des données et je monte des projets complets, du modèle de machine learning jusqu'au dashboard.
                 <br />
                 <br />
                 Je viens de terminer mon <b className="purple">stage chez trITon</b> (avril – juillet 2026).
@@ -38,7 +38,7 @@ function Home2() {
               </p>
             ) : (
               <p className="home-about-body">
-                I'm a third-year <b className="purple">AI &amp; Data Science</b> student at Ynov Aix. In plain terms: I code in Python, I work with data and I build complete projects, from the machine learning model all the way to the dashboard.
+                I'm a first-year Master's student in <b className="purple">Artificial Intelligence</b> at Ynov Aix. In plain terms: I code in Python, I work with data and I build complete projects, from the machine learning model all the way to the dashboard.
                 <br />
                 <br />
                 I just finished my <b className="purple">internship at trITon</b> (April – July 2026).
@@ -88,13 +88,13 @@ function Home2() {
               {lang === "fr" ? (
                 <>
                   Écris-moi, appelle-moi au{" "}
-                  <a href="tel:+33769638164" className="purple">07 69 63 81 64</a>, ou va{" "}
+                  <a href="tel:+33628832447" className="purple">06 28 83 24 47</a>, ou va{" "}
                   <span className="purple">jeter un œil à mon code</span> sur GitHub
                 </>
               ) : (
                 <>
                   Email me, call me at{" "}
-                  <a href="tel:+33769638164" className="purple">+33 7 69 63 81 64</a>, or{" "}
+                  <a href="tel:+33628832447" className="purple">+33 6 28 83 24 47</a>, or{" "}
                   <span className="purple">take a look at my code</span> on GitHub
                 </>
               )}
