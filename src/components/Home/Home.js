@@ -3,6 +3,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Particle from "../Particle";
 import Home2 from "./Home2";
+import Featured from "./Featured";
+import Globe3D from "./Globe3D";
+import Tilt from "react-parallax-tilt";
 import Type from "./Type";
 import Console from "./Console";
 import Stats from "./Stats";
@@ -16,6 +19,7 @@ function Home() {
       <Container fluid className="home-section" id="home">
         <Particle />
         <div className="arc-grid-bg" />
+        <div className="arc-floor" aria-hidden="true" />
         <Container className="home-content arc-hero">
           <Row className="align-items-center">
             <Col md={7} className="home-header">
@@ -43,15 +47,15 @@ function Home() {
               <Reveal delay={150}>
                 {lang === "fr" ? (
                   <p className="arc-role">
-                    Étudiant en 3<sup>e</sup> année IA &amp; Data Science à Ynov Aix,
-                    disponible tout de suite pour une alternance. Je suis un produit de la donnée
-                    jusqu'à la mise en production.
+                    Étudiant en M1 Mastère Expert en IA à Ynov Aix, tout juste sorti
+                    d'un stage IA chez trITon et disponible tout de suite pour une alternance.
+                    Je suis un produit de la donnée jusqu'à la mise en production.
                   </p>
                 ) : (
                   <p className="arc-role">
-                    Third-year AI &amp; Data Science student at Ynov Aix, available right
-                    now for an apprenticeship. I follow a product from the raw data all the
-                    way to production.
+                    First-year Master's student in AI at Ynov Aix, fresh out of an AI
+                    internship at trITon and available right now for an apprenticeship.
+                    I follow a product from the raw data all the way to production.
                   </p>
                 )}
                 <div className="arc-typeline">
@@ -82,14 +86,30 @@ function Home() {
               </Reveal>
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
+            <Col md={5} className="arc-hero-visual" style={{ paddingBottom: 20 }}>
+              <Globe3D />
               <Reveal delay={180}>
-                <Console key={lang} />
+                <Tilt
+                  className="arc-tilt"
+                  tiltMaxAngleX={7}
+                  tiltMaxAngleY={9}
+                  perspective={1100}
+                  glareEnable
+                  glareMaxOpacity={0.12}
+                  glareColor="#c4f24e"
+                  glarePosition="all"
+                  glareBorderRadius="3px"
+                  transitionSpeed={1200}
+                  gyroscope={false}
+                >
+                  <Console key={lang} />
+                </Tilt>
               </Reveal>
             </Col>
           </Row>
         </Container>
       </Container>
+      <Featured />
       <Home2 />
     </section>
   );

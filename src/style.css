@@ -166,7 +166,7 @@ button:focus { box-shadow: none !important; }
   background-position: top center;
   padding: 30px 0 !important;
 }
-.home-content { padding: 9rem 0 2rem !important; color: var(--text); text-align: left; }
+.home-content { padding: 9rem 12px 2rem !important; color: var(--text); text-align: left; }
 
 .heading { font-size: clamp(1.7rem, 4vw, 2.2rem) !important; padding-left: 0 !important; font-weight: 500 !important; }
 .heading-name {
@@ -197,6 +197,13 @@ button:focus { box-shadow: none !important; }
 
 .myAvtar { justify-content: center !important; padding-top: 9em !important; }
 @media (max-width: 767px) { .myAvtar { padding-top: 2em !important; padding-bottom: 2em !important; } }
+
+/* Projets phares de l'accueil */
+.home-featured { position: relative; padding: 70px 0 40px !important; border-top: 1px solid var(--line); }
+.home-featured .arc-eyebrow { margin-bottom: 6px; }
+.home-featured-sub { color: var(--muted); max-width: 640px; margin: 8px auto 0; text-align: center; }
+.home-featured-more { display: flex; justify-content: center; padding: 6px 0 20px; }
+@media (max-width: 767px) { .home-content { padding-left: 20px !important; padding-right: 20px !important; } }
 
 .home-about-section {
   position: relative;
@@ -240,7 +247,7 @@ button:focus { box-shadow: none !important; }
 .footer {
   background-color: #08080a;
   border-top: 1px solid var(--line);
-  padding: 18px 0 14px !important;
+  padding: 18px 12px 14px !important;
 }
 .footer-copywright { text-align: center !important; }
 .footer-body { z-index: 1; text-align: center !important; }
@@ -274,7 +281,7 @@ button:focus { box-shadow: none !important; }
   border-color: var(--line-strong) !important;
 }
 .project-card-view .card-title { font-weight: 600; font-size: 1.06rem; color: var(--text); margin-bottom: 0.5rem; }
-.project-card-view .card-text { color: var(--muted) !important; font-size: 0.9rem; line-height: 1.6; }
+.project-card-view .card-text { text-align: left; color: var(--muted) !important; font-size: 0.9rem; line-height: 1.6; }
 .card-img-top {
   padding: 0 !important;
   opacity: 1 !important;

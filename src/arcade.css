@@ -111,6 +111,7 @@ html {
    mais les boutons ci-dessous en ont besoin. */
 .home-section {
   z-index: auto !important;
+  overflow: hidden; /* le sol en grille déborde volontairement sur les côtés */
 }
 #tsparticles {
   z-index: 0 !important;
@@ -317,15 +318,115 @@ html {
 /* --------- Apparition au défilement --------- */
 .arc-reveal {
   opacity: 0;
-  transform: translateY(26px);
-  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
-              transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  transform: perspective(1000px) translateY(34px) rotateX(16deg) scale(0.98);
+  transform-origin: 50% 0%;
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
   will-change: opacity, transform;
 }
 .arc-reveal.is-in { opacity: 1; transform: none; }
 
+/* ---------------------------------------------------------------------------
+   Effets 3D
+--------------------------------------------------------------------------- */
+
+/* Les éléments inclinés en 3D (apparitions, globe, sol) ne doivent jamais
+   créer de défilement horizontal. */
+.App { overflow-x: clip; }
+
+/* Globe de données derrière la console */
+.arc-hero-visual { position: relative; }
+.arc-globe {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 120%;
+  aspect-ratio: 1;
+  transform: translate(-50%, -54%);
+  pointer-events: none;
+  z-index: 0;
+}
+.arc-hero-visual .arc-reveal { position: relative; z-index: 1; }
+.arc-hero-visual .arc-console { background: rgba(8, 8, 10, 0.86); backdrop-filter: blur(3px); }
+
+/* Sol en grille façon borne d'arcade, qui défile vers l'avant */
+.arc-floor {
+  position: absolute;
+  left: -50%;
+  right: -50%;
+  bottom: 0;
+  height: 30%;
+  pointer-events: none;
+  perspective: 420px;
+  perspective-origin: 50% 0%;
+  mask-image: linear-gradient(to bottom, transparent 0%, #000 70%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 70%);
+  z-index: 0;
+}
+.arc-floor::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 -60% 0;
+  transform: rotateX(72deg);
+  transform-origin: 50% 0%;
+  background-image:
+    linear-gradient(rgba(196, 242, 78, 0.2) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(139, 123, 255, 0.2) 1px, transparent 1px);
+  background-size: 64px 64px;
+  animation: arc-floor-run 2.4s linear infinite;
+}
+@keyframes arc-floor-run { to { background-position: 0 64px; } }
+
+/* Inclinaison 3D au survol (console, cartes) */
+.arc-tilt { transform-style: preserve-3d; will-change: transform; }
+.arc-tilt-card { height: 100%; border-radius: 16px; }
+.arc-tilt-card .project-card-view:hover { transform: translateZ(30px) !important; }
+
+/* Anneaux en orbite autour de la photo */
+.arc-avatar { position: relative; width: 250px; margin: 0 auto; transform-style: preserve-3d; }
+.arc-orbit {
+  position: absolute;
+  inset: -22px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(196, 242, 78, 0.55);
+  pointer-events: none;
+  animation: arc-orbit-a 9s linear infinite;
+}
+.arc-orbit::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -5px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 12px var(--accent);
+}
+.arc-orbit-2 {
+  inset: -38px;
+  border-color: rgba(139, 123, 255, 0.5);
+  animation: arc-orbit-b 13s linear infinite;
+}
+.arc-orbit-2::after { background: var(--violet); box-shadow: 0 0 12px var(--violet); left: auto; right: -5px; }
+@keyframes arc-orbit-a { from { transform: rotateX(68deg) rotateZ(0); } to { transform: rotateX(68deg) rotateZ(360deg); } }
+@keyframes arc-orbit-b { from { transform: rotateY(64deg) rotateZ(0); } to { transform: rotateY(64deg) rotateZ(-360deg); } }
+
+/* Icônes de compétences : demi-tour en 3D au survol */
+.tech-icons { perspective: 600px; }
+.tech-icons svg { transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1); transform-style: preserve-3d; }
+.tech-icons:hover svg { transform: rotateY(360deg) scale(1.08); }
+
+/* Chiffres en relief (extrusion violette) */
+.arc-stat-num {
+  text-shadow: 1px 1px 0 #6a5ce0, 2px 2px 0 #5a4dc9, 3px 3px 0 #4a3fb0, 4px 4px 0 #3a3196,
+    6px 7px 10px rgba(0, 0, 0, 0.6);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .arc-reveal { opacity: 1; transform: none; transition: none; }
+  .arc-floor::before, .arc-orbit { animation: none; }
+  .tech-icons:hover svg { transform: none; }
   .arc-dot, .arc-caret, .arc-meter-blocks i { animation: none; opacity: 1; transform: none; }
   .arc-btn:hover { transform: none; }
 }

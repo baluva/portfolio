@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 import Reveal from "../Reveal";
+import Tilt from "react-parallax-tilt";
 import { useLang } from "../../i18n";
 import { relativeTime, fetchLiveCommits } from "./activity";
 
@@ -27,6 +28,19 @@ function ProjectCards(props) {
 
   return (
     <Reveal>
+    <Tilt
+      className="arc-tilt arc-tilt-card"
+      tiltMaxAngleX={5}
+      tiltMaxAngleY={7}
+      perspective={1200}
+      glareEnable
+      glareMaxOpacity={0.1}
+      glareColor="#c4f24e"
+      glarePosition="all"
+      glareBorderRadius="14px"
+      transitionSpeed={1500}
+      gyroscope={false}
+    >
     <Card className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
       <Card.Body>
@@ -47,7 +61,7 @@ function ProjectCards(props) {
           </div>
         )}
         <Card.Title>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
+        <Card.Text>
           {props.description}
         </Card.Text>
 
@@ -105,6 +119,7 @@ function ProjectCards(props) {
         )}
       </Card.Body>
     </Card>
+    </Tilt>
     </Reveal>
   );
 }

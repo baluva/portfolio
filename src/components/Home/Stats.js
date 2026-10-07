@@ -1,9 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useLang } from "../../i18n";
+import { ALL_PROJECTS, LIVE_COUNT } from "../Projects/Projects";
 
 const STATS = [
-  { to: 26, suffix: "", label: { fr: "projets menés", en: "projects built" } },
-  { to: 5, suffix: "", label: { fr: "apps en ligne", en: "live apps" } },
+  { to: ALL_PROJECTS.length, suffix: "", label: { fr: "projets menés", en: "projects built" } },
+  { to: LIVE_COUNT, suffix: "", label: { fr: "apps en ligne", en: "live apps" } },
   { to: 3, suffix: "", label: { fr: "langues parlées", en: "languages spoken" } },
 ];
 

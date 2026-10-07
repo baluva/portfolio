@@ -58,7 +58,9 @@ function Home2() {
             )}
           </Col>
           <Col md={4} className="myAvtar">
-            <Tilt>
+            <Tilt className="arc-avatar" tiltMaxAngleX={12} tiltMaxAngleY={12} perspective={800} gyroscope={false}>
+              <span className="arc-orbit arc-orbit-1" aria-hidden="true" />
+              <span className="arc-orbit arc-orbit-2" aria-hidden="true" />
               <div style={{
                 width: "250px",
                 height: "250px",

@@ -12,25 +12,25 @@ import tradeWithAI from "../../Assets/Projects/trade_with_ai.png";
 import dbugHunter from "../../Assets/Projects/dbug_hunter.png";
 import promptBooster from "../../Assets/Projects/prompt_booster.png";
 import supplyPulse from "../../Assets/Projects/supplypulse.png";
-import wattcast from "../../Assets/Projects/wattcast.png";
-import videoInsight from "../../Assets/Projects/videoinsight.svg";
-import obesityEda from "../../Assets/Projects/obesity_eda.svg";
-import puissance4 from "../../Assets/Projects/puissance4.svg";
-import cryptoTracker from "../../Assets/Projects/crypto_tracker.svg";
-import redRpg from "../../Assets/Projects/red_rpg.svg";
-import ymmersionWeb from "../../Assets/Projects/ymmersion_web.svg";
+import wattcast from "../../Assets/Projects/wattcast.jpg";
+import videoInsight from "../../Assets/Projects/videoinsight.jpg";
+import obesityEda from "../../Assets/Projects/obesity_eda.jpg";
+import puissance4 from "../../Assets/Projects/puissance4.jpg";
+import cryptoTracker from "../../Assets/Projects/crypto_tracker.jpg";
+import redRpg from "../../Assets/Projects/red_rpg.jpg";
+import ymmersionWeb from "../../Assets/Projects/ymmersion_web.jpg";
 import olist from "../../Assets/Projects/olist.svg";
 import swarmPrediction from "../../Assets/Projects/swarm_prediction.png";
 import bacQuiz from "../../Assets/Projects/bac_quiz.png";
 import techYnov from "../../Assets/Projects/tech_ynov.png";
-import scandiag from "../../Assets/Projects/scandiag.svg";
+import scandiag from "../../Assets/Projects/scandiag.jpg";
 import codeRouteTn from "../../Assets/Projects/code_route_tn.png";
 import frostDays from "../../Assets/Projects/frost_days.png";
-import ytechDocbase from "../../Assets/Projects/ytech_docbase.svg";
+import ytechDocbase from "../../Assets/Projects/ytech_docbase.jpg";
 import magicAutos from "../../Assets/Projects/magic_autos.png";
 import soukBvmt from "../../Assets/Projects/souk_bvmt.png";
 import sawtna from "../../Assets/Projects/sawtna.png";
-import mapsProspector from "../../Assets/Projects/maps_prospector.svg";
+import mapsProspector from "../../Assets/Projects/maps_prospector.jpg";
 
 // Chaque carte a son titre et sa description en français et en anglais.
 // live: true = site réellement en ligne et utilisable (vérifié à la main).
@@ -367,10 +367,10 @@ const SECTIONS = [
   },
 ];
 
-const ALL_PROJECTS = SECTIONS.flatMap((section) => section.projects);
-const LIVE_COUNT = ALL_PROJECTS.filter((p) => p.live).length;
+export const ALL_PROJECTS = SECTIONS.flatMap((section) => section.projects);
+export const LIVE_COUNT = ALL_PROJECTS.filter((p) => p.live).length;
 
-function renderCard(p, t) {
+export function renderCard(p, t) {
   const repo = repoFromLink(p.ghLink);
   return (
     <Col md={4} className="project-card" key={p.title.en}>
