@@ -13,6 +13,7 @@ import dbugHunter from "../../Assets/Projects/dbug_hunter.png";
 import promptBooster from "../../Assets/Projects/prompt_booster.png";
 import supplyPulse from "../../Assets/Projects/supplypulse.png";
 import wattcast from "../../Assets/Projects/wattcast.jpg";
+import parcit from "../../Assets/Projects/parcit.jpg";
 import resistome from "../../Assets/Projects/resistome.jpg";
 import resistome1 from "../../Assets/Projects/resistome/01_outil.jpg";
 import resistome2 from "../../Assets/Projects/resistome/02_carte.jpg";
@@ -129,6 +130,18 @@ const SECTIONS = [
         ghLink: "https://github.com/baluva/dbug-hunter",
         demoLink: "https://louey9999-dbug-hunter.hf.space",
         live: true,
+      },
+      {
+        imgPath: parcit,
+        title: {
+          fr: "ParcIT — Qualité des données d'un parc informatique",
+          en: "ParcIT — IT asset data quality",
+        },
+        description: {
+          fr: "Dans une grande entreprise, la base du parc informatique dérive vite : un PC reste au nom d'un collaborateur parti, un numéro de série est saisi deux fois, le statut ne correspond plus au dernier mouvement. J'ai généré un parc fictif réaliste (5 000 équipements, 2 200 collaborateurs, 21 000 mouvements) en y glissant ce genre d'erreurs, puis écrit les contrôles en SQL (DuckDB) qui les retrouvent : 243 écarts remontés, plus la liste du matériel hors garantie à renouveler. Les résultats sont exportés pour le reporting. Le dashboard Power BI est en cours.",
+          en: "In a large company, the IT asset database drifts fast: a laptop stays assigned to someone who has left, a serial number is entered twice, the status no longer matches the last movement. I generated a realistic fictional inventory (5,000 devices, 2,200 employees, 21,000 movements) with this kind of error slipped in, then wrote the SQL checks (DuckDB) that catch them: 243 issues flagged, plus the list of out-of-warranty hardware to renew. Results are exported for reporting. The Power BI dashboard is in progress.",
+        },
+        ghLink: "https://github.com/baluva/parcit",
       },
       {
         imgPath: videoInsight,

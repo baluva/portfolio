@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T12:05:15.530Z",
+  "generatedAt": "2026-10-08T12:54:24.234Z",
   "repos": {
     "baluva/resistome": {
       "pushedAt": "2026-10-08T11:21:31Z",
@@ -137,6 +137,29 @@
           "message": "Ajout du Dockerfile pour déploiement (Hugging Face Spaces)",
           "date": "2026-06-18T07:39:44Z",
           "url": "https://github.com/baluva/dbug-hunter/commit/486bceed24ad39ed8b78193ddd162ebe6c7c6ef7"
+        }
+      ]
+    },
+    "baluva/parcit": {
+      "pushedAt": "2026-10-08T12:54:01Z",
+      "commits": [
+        {
+          "sha": "2becd80",
+          "message": "Aperçu du reporting et README",
+          "date": "2026-10-08T12:53:48Z",
+          "url": "https://github.com/baluva/parcit/commit/2becd80266271190e5db01fefabd66d64271d75e"
+        },
+        {
+          "sha": "39c325f",
+          "message": "Contrôles de cohérence en SQL et exports pour le reporting",
+          "date": "2026-10-08T12:53:48Z",
+          "url": "https://github.com/baluva/parcit/commit/39c325f5e5b39753a5f6f6ec741e25109409605d"
+        },
+        {
+          "sha": "e2ccb41",
+          "message": "Jeu de données d'un parc informatique avec anomalies injectées",
+          "date": "2026-10-08T12:53:48Z",
+          "url": "https://github.com/baluva/parcit/commit/e2ccb4159cff79a7d1fffcd2957b9a1416f2a6e2"
         }
       ]
     },
