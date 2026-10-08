@@ -13,6 +13,12 @@ import dbugHunter from "../../Assets/Projects/dbug_hunter.png";
 import promptBooster from "../../Assets/Projects/prompt_booster.png";
 import supplyPulse from "../../Assets/Projects/supplypulse.png";
 import wattcast from "../../Assets/Projects/wattcast.jpg";
+import resistome from "../../Assets/Projects/resistome.jpg";
+import resistome1 from "../../Assets/Projects/resistome/01_outil.jpg";
+import resistome2 from "../../Assets/Projects/resistome/02_carte.jpg";
+import resistome3 from "../../Assets/Projects/resistome/03_validation.jpg";
+import resistome4 from "../../Assets/Projects/resistome/04_probleme.jpg";
+import resistome5 from "../../Assets/Projects/resistome/05_genomes.jpg";
 import videoInsight from "../../Assets/Projects/videoinsight.jpg";
 import obesityEda from "../../Assets/Projects/obesity_eda.jpg";
 import puissance4 from "../../Assets/Projects/puissance4.jpg";
@@ -38,6 +44,42 @@ const SECTIONS = [
   {
     title: { fr: "IA & Data Science", en: "AI & Data Science" },
     projects: [
+      {
+        imgPath: resistome,
+        title: {
+          fr: "Résistome — Quel antibiotique sans antibiogramme ?",
+          en: "Résistome — Which antibiotic without an antibiogram?",
+        },
+        description: {
+          fr: "Projet mené avec Sara Barbirou (CMI, immunologie). Le problème : un antibiogramme prend 48 à 72 h et beaucoup d'hôpitaux n'en font pas, alors le médecin choisit un antibiotique à l'aveugle ; s'il se trompe le traitement échoue, s'il prend par réflexe un antibiotique de dernier recours il nourrit la résistance. L'outil part des données de surveillance de l'OMS (GLASS, 109 pays) et calcule, pour un pays et une infection, la probabilité que chaque antibiotique marche, avec un modèle bayésien qui donne un intervalle d'incertitude. Il recommande ensuite le spectre le plus étroit qui suffit, dans l'ordre AWaRe de l'OMS. Je l'ai validé honnêtement : réglé sur 2022, testé sur 2023 jamais vue, 96 % des valeurs tombent dans l'intervalle prédit et 153 recommandations sur 158 tiennent. Ce que ça montre : pour une infection urinaire, dans 52 pays sur 75, le premier antibiotique suivi par l'OMS qui marche dans 80 % des cas est déjà un carbapénème. Une seconde partie lit 1,7 million de génomes NCBI pour comprendre quels gènes causent ces résistances. Python, Playwright, LightGBM, Streamlit.",
+          en: "Project built with Sara Barbirou (CMI, immunology). The problem: an antibiogram takes 48 to 72 hours and many hospitals don't run one, so doctors pick an antibiotic blind; if they're wrong the treatment fails, if they reach for a last-resort drug by reflex they fuel tomorrow's resistance. The tool starts from WHO surveillance data (GLASS, 109 countries) and computes, for a country and an infection, the probability that each antibiotic works, with a Bayesian model that gives an uncertainty interval. It then recommends the narrowest spectrum that is enough, following the WHO AWaRe order. I validated it honestly: tuned on 2022, tested on unseen 2023, 96% of values fall inside the predicted interval and 153 of 158 recommendations still hold. What it shows: for a urinary tract infection, in 52 of 75 countries the first WHO-monitored antibiotic that works in 80% of cases is already a carbapenem. A second part reads 1.7 million NCBI genomes to understand which genes drive this resistance. Python, Playwright, LightGBM, Streamlit.",
+        },
+        ghLink: "https://github.com/baluva/resistome",
+        sources: [
+          {
+            label: { fr: "OMS GLASS", en: "WHO GLASS" },
+            note: { fr: "résistance par pays, bactérie et antibiotique, 109 pays, 2020-2023", en: "resistance by country, bacterium and antibiotic, 109 countries, 2020-2023" },
+            url: "https://worldhealthorg.shinyapps.io/glass-dashboard/",
+          },
+          {
+            label: { fr: "Classification AWaRe 2025 (OMS)", en: "WHO AWaRe classification 2025" },
+            note: { fr: "antibiotiques Access, Watch, Reserve", en: "Access, Watch, Reserve antibiotics" },
+            url: "https://iris.who.int/handle/10665/382244",
+          },
+          {
+            label: { fr: "NCBI Pathogen Detection", en: "NCBI Pathogen Detection" },
+            note: { fr: "1,7 M de génomes, gènes (AMRFinderPlus) et antibiogrammes", en: "1.7M genomes, genes (AMRFinderPlus) and antibiograms" },
+            url: "https://www.ncbi.nlm.nih.gov/pathogens/",
+          },
+        ],
+        gallery: [
+          { src: resistome1, caption: { fr: "L'outil : recommandation et couverture de chaque antibiotique (Tunisie, infection urinaire)", en: "The tool: recommendation and coverage of each antibiotic (Tunisia, UTI)" } },
+          { src: resistome2, caption: { fr: "Carte mondiale : catégorie du premier antibiotique qui suffit", en: "World map: category of the first antibiotic that is enough" } },
+          { src: resistome3, caption: { fr: "Validation sur 2023 : prédit contre observé, réglage des paramètres", en: "Validation on 2023: predicted vs observed, parameter tuning" } },
+          { src: resistome4, caption: { fr: "Le problème et la démarche", en: "The problem and the approach" } },
+          { src: resistome5, caption: { fr: "Génomes : prédire l'antibiogramme depuis l'ADN", en: "Genomes: predicting the antibiogram from DNA" } },
+        ],
+      },
       {
         imgPath: wattcast,
         title: {
@@ -381,6 +423,8 @@ export function renderCard(p, t) {
         description={t(p.description)}
         ghLink={p.ghLink}
         demoLink={p.demoLink}
+        gallery={p.gallery}
+        sources={p.sources}
         live={p.live}
         repo={repo}
         activity={activityFor(repo)}

@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
@@ -14,6 +15,19 @@ function ProjectCards(props) {
   const [commits, setCommits] = useState(props.activity ? props.activity.commits : []);
   const [loading, setLoading] = useState(false);
   const lastUpdate = commits[0] ? commits[0].date : null;
+  const gallery = props.gallery || [];
+  const [shot, setShot] = useState(null); // index de la capture ouverte
+
+  useEffect(() => {
+    if (shot === null) return undefined;
+    const onKey = (e) => {
+      if (e.key === "Escape") setShot(null);
+      if (e.key === "ArrowRight") setShot((i) => (i + 1) % gallery.length);
+      if (e.key === "ArrowLeft") setShot((i) => (i - 1 + gallery.length) % gallery.length);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [shot, gallery.length]);
 
   const toggleChanges = async () => {
     const next = !open;
@@ -43,6 +57,15 @@ function ProjectCards(props) {
     >
     <Card className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+      {gallery.length > 0 && (
+        <div className="proj-gallery" aria-label={t({ fr: "Captures", en: "Screenshots" })}>
+          {gallery.map((g, i) => (
+            <button key={g.src} type="button" onClick={() => setShot(i)} title={t(g.caption)}>
+              <img src={g.src} alt={t(g.caption)} loading="lazy" />
+            </button>
+          ))}
+        </div>
+      )}
       <Card.Body>
         {(props.live || lastUpdate) && (
           <div className="proj-status">
@@ -64,6 +87,20 @@ function ProjectCards(props) {
         <Card.Text>
           {props.description}
         </Card.Text>
+
+        {props.sources && props.sources.length > 0 && (
+          <div className="proj-sources">
+            <span>{t({ fr: "Sources des données", en: "Data sources" })}</span>
+            <ul>
+              {props.sources.map((src) => (
+                <li key={src.url}>
+                  <a href={src.url} target="_blank" rel="noreferrer">{t(src.label)}</a>
+                  {src.note && <> · {t(src.note)}</>}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
 
         {/* Afficher le bouton GitHub uniquement si ghLink est fourni */}
         {props.ghLink && (
@@ -119,6 +156,23 @@ function ProjectCards(props) {
         )}
       </Card.Body>
     </Card>
+    {shot !== null && createPortal(
+      <div className="proj-lightbox" role="dialog" aria-modal="true" onClick={() => setShot(null)}>
+        <figure onClick={(e) => e.stopPropagation()}>
+          <img src={gallery[shot].src} alt={t(gallery[shot].caption)} />
+          <figcaption>
+            <span>{shot + 1} / {gallery.length}</span>
+            {t(gallery[shot].caption)}
+          </figcaption>
+          <div className="proj-lightbox-nav">
+            <button type="button" onClick={() => setShot((shot - 1 + gallery.length) % gallery.length)}>←</button>
+            <button type="button" onClick={() => setShot(null)}>{t({ fr: "Fermer", en: "Close" })}</button>
+            <button type="button" onClick={() => setShot((shot + 1) % gallery.length)}>→</button>
+          </div>
+        </figure>
+      </div>,
+      document.body
+    )}
     </Tilt>
     </Reveal>
   );

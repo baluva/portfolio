@@ -457,3 +457,30 @@ button:focus { box-shadow: none !important; }
 .proj-commits a:hover { color: var(--accent) !important; }
 .proj-commits span { color: var(--muted); font-size: 0.76rem; }
 .proj-commits code { color: var(--muted); font-size: 0.74rem; }
+
+/* Galerie de captures sur une carte projet */
+.proj-gallery { display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; padding: 6px 6px 0; }
+.proj-gallery button { padding: 0; border: 1px solid rgba(255,255,255,.12); border-radius: 4px;
+  overflow: hidden; background: none; cursor: zoom-in; aspect-ratio: 4 / 3; }
+.proj-gallery img { width: 100%; height: 100%; object-fit: cover; object-position: top left;
+  opacity: .85; transition: opacity .2s; }
+.proj-gallery button:hover img, .proj-gallery button:focus-visible img { opacity: 1; }
+.proj-lightbox { position: fixed; inset: 0; z-index: 2000; background: rgba(8, 8, 10, .88);
+  display: flex; align-items: center; justify-content: center; padding: 16px; }
+.proj-lightbox figure { margin: 0; max-width: min(1200px, 96vw); max-height: 94vh; display: flex; flex-direction: column; gap: 10px; }
+.proj-lightbox img { max-width: 100%; max-height: 80vh; object-fit: contain; border-radius: 6px; background: #fcfcfb; }
+.proj-lightbox figcaption { color: #e9e9e4; font-size: .92rem; text-align: left; }
+.proj-lightbox figcaption span { color: #c4f24e; font-family: monospace; margin-right: .6rem; }
+.proj-lightbox-nav { display: flex; gap: 8px; justify-content: flex-end; }
+.proj-lightbox-nav button { background: transparent; color: #e9e9e4; border: 1px solid rgba(255,255,255,.25);
+  border-radius: 4px; padding: 4px 14px; cursor: pointer; }
+.proj-lightbox-nav button:hover { border-color: #c4f24e; color: #c4f24e; }
+
+/* Sources des données sur une carte projet */
+.proj-sources { text-align: left; margin: 0 0 1rem; padding: .6rem .75rem; border-left: 2px solid #c4f24e;
+  background: rgba(255,255,255,.03); border-radius: 0 6px 6px 0; }
+.proj-sources span { display: block; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase;
+  color: #c4f24e; margin-bottom: .3rem; }
+.proj-sources ul { margin: 0; padding-left: 1rem; font-size: .82rem; color: var(--muted); line-height: 1.5; }
+.proj-sources a { color: var(--text); text-decoration: underline; text-underline-offset: 2px; }
+.proj-sources a:hover { color: #c4f24e; }

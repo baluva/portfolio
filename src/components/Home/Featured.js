@@ -5,7 +5,7 @@ import { useLang } from "../../i18n";
 import { ALL_PROJECTS, renderCard } from "../Projects/Projects";
 
 // Les trois projets mis en avant sur l'accueil, repérés par leur dépôt.
-const FEATURED = ["baluva/wattcast", "baluva/supplypulse", "baluva/code-route-tn"];
+const FEATURED = ["baluva/resistome", "baluva/wattcast", "baluva/code-route-tn"];
 
 function Featured() {
   const { t } = useLang();
@@ -25,8 +25,8 @@ function Featured() {
         </h1>
         <p className="home-featured-sub">
           {t({
-            fr: "Un modèle en production comparé à RTE, un entrepôt de données testé en CI, une appli utilisée en Tunisie.",
-            en: "A production model benchmarked against RTE, a data warehouse tested in CI, an app used in Tunisia.",
+            fr: "Un outil pour choisir un antibiotique sans antibiogramme, un modèle en production comparé à RTE, une appli utilisée en Tunisie.",
+            en: "A tool to choose an antibiotic without an antibiogram, a production model benchmarked against RTE, an app used in Tunisia.",
           })}
         </p>
         <Row style={{ justifyContent: "center" }}>{projects.map((p) => renderCard(p, t))}</Row>
