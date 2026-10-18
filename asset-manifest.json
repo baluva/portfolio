@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.2be9e94d.css",
-    "main.js": "/portfolio/static/js/main.78bd0742.js",
+    "main.js": "/portfolio/static/js/main.ee543b6c.js",
     "static/js/415.4d6acbeb.chunk.js": "/portfolio/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/magic_autos.png": "/portfolio/static/media/magic_autos.dd13db7c11055aea58db.png",
@@ -17,6 +17,7 @@
     "static/media/tech_ynov.png": "/portfolio/static/media/tech_ynov.8d648f60caf8d1762e02.png",
     "static/media/spotifapi.png": "/portfolio/static/media/spotifapi.a966e1bc093d4c5e3b6d.png",
     "static/media/supplypulse.png": "/portfolio/static/media/supplypulse.baa31fb53991c585fdbe.png",
+    "static/media/03-apercu-ecriture.jpg": "/portfolio/static/media/03-apercu-ecriture.758a40b7939856c0ae37.jpg",
     "static/media/dbug_hunter.png": "/portfolio/static/media/dbug_hunter.26bca6bf987c5f782ffc.png",
     "static/media/01_outil.jpg": "/portfolio/static/media/01_outil.950001377bbd6e7a13f4.jpg",
     "static/media/messi_analytics.png": "/portfolio/static/media/messi_analytics.dda6507d4e0435811011.png",
@@ -25,6 +26,7 @@
     "static/media/02_carte.jpg": "/portfolio/static/media/02_carte.c5d6d092b151d09aa60d.jpg",
     "static/media/souk_bvmt.png": "/portfolio/static/media/souk_bvmt.ba3783f9ad95fb9fca29.png",
     "static/media/frost_days.png": "/portfolio/static/media/frost_days.c1e526bdda1453b89e9e.png",
+    "static/media/09-execution-claude.jpg": "/portfolio/static/media/09-execution-claude.106d0a7dccf62615e221.jpg",
     "static/media/insight_hub.png": "/portfolio/static/media/insight_hub.b1e1673b115043b5b0a7.png",
     "static/media/maps_prospector.jpg": "/portfolio/static/media/maps_prospector.d84c34e78141e0468b74.jpg",
     "static/media/sawtna.png": "/portfolio/static/media/sawtna.2d1cc84c9133c59cb2a3.png",
@@ -33,10 +35,13 @@
     "static/media/about.png": "/portfolio/static/media/about.aee0f771fbfc1e7b8fa8.png",
     "static/media/parcit.jpg": "/portfolio/static/media/parcit.063ca5a3f4751e2e2059.jpg",
     "static/media/resistome.jpg": "/portfolio/static/media/resistome.fa5ff31b784ee1a204e0.jpg",
+    "static/media/01-architecture.jpg": "/portfolio/static/media/01-architecture.cd85067a040894286e43.jpg",
     "static/media/obesity_eda.jpg": "/portfolio/static/media/obesity_eda.7147adfd018e9bbea69c.jpg",
+    "static/media/company_sql_agents.jpg": "/portfolio/static/media/company_sql_agents.017f4d064cbd16e7d31a.jpg",
     "static/media/puissance4.jpg": "/portfolio/static/media/puissance4.0f9ed5a19188cca6fb61.jpg",
     "static/media/videoinsight.jpg": "/portfolio/static/media/videoinsight.bf7bd82def8c5090ea1b.jpg",
     "static/media/heart_attack.png": "/portfolio/static/media/heart_attack.132a80430bcc4a047cb8.png",
+    "static/media/10-graphique-genere.jpg": "/portfolio/static/media/10-graphique-genere.a04f1ba6832be941abe2.jpg",
     "static/media/red_rpg.jpg": "/portfolio/static/media/red_rpg.69654763a74368fae2e1.jpg",
     "static/media/ytech_docbase.jpg": "/portfolio/static/media/ytech_docbase.5345efa0e44c45fe9108.jpg",
     "static/media/wattcast.jpg": "/portfolio/static/media/wattcast.6b7240cfd2dda2b4d7f5.jpg",
@@ -45,12 +50,12 @@
     "index.html": "/portfolio/index.html",
     "static/media/olist.svg": "/portfolio/static/media/olist.ede44484245418cf1cbe97bccd85bad7.svg",
     "main.2be9e94d.css.map": "/portfolio/static/css/main.2be9e94d.css.map",
-    "main.78bd0742.js.map": "/portfolio/static/js/main.78bd0742.js.map",
+    "main.ee543b6c.js.map": "/portfolio/static/js/main.ee543b6c.js.map",
     "415.4d6acbeb.chunk.js.map": "/portfolio/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2be9e94d.css",
-    "static/js/main.78bd0742.js"
+    "static/js/main.ee543b6c.js"
   ]
 }
