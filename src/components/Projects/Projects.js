@@ -38,6 +38,11 @@ import magicAutos from "../../Assets/Projects/magic_autos.png";
 import soukBvmt from "../../Assets/Projects/souk_bvmt.png";
 import sawtna from "../../Assets/Projects/sawtna.png";
 import mapsProspector from "../../Assets/Projects/maps_prospector.jpg";
+import companySqlAgents from "../../Assets/Projects/company_sql_agents.jpg";
+import companySql1 from "../../Assets/Projects/company_sql_agents/01-architecture.jpg";
+import companySql2 from "../../Assets/Projects/company_sql_agents/09-execution-claude.jpg";
+import companySql3 from "../../Assets/Projects/company_sql_agents/03-apercu-ecriture.jpg";
+import companySql4 from "../../Assets/Projects/company_sql_agents/10-graphique-genere.jpg";
 
 // Chaque carte a son titre et sa description en français et en anglais.
 // live: true = site réellement en ligne et utilisable (vérifié à la main).
@@ -79,6 +84,24 @@ const SECTIONS = [
           { src: resistome3, caption: { fr: "Validation sur 2023 : prédit contre observé, réglage des paramètres", en: "Validation on 2023: predicted vs observed, parameter tuning" } },
           { src: resistome4, caption: { fr: "Le problème et la démarche", en: "The problem and the approach" } },
           { src: resistome5, caption: { fr: "Génomes : prédire l'antibiogramme depuis l'ADN", en: "Genomes: predicting the antibiogram from DNA" } },
+        ],
+      },
+      {
+        imgPath: companySqlAgents,
+        title: {
+          fr: "Company SQL Agents — Agents Claude sur SQL Server",
+          en: "Company SQL Agents — Claude agents on SQL Server",
+        },
+        description: {
+          fr: "Des agents Claude qui travaillent sur la base SQL Server d'une entreprise : on pose une question en français, ils répondent avec les vrais chiffres, font des rapports avec graphiques et modifient des données. J'ai écrit le serveur MCP qui sert de guichet : chaque requête est analysée avec sqlglot, la lecture passe par un compte en lecture seule, et toute écriture suit aperçu, accord humain puis journal d'audit. Quatre agents spécialisés (analyste, rapports, gestion des données, relecture SQL), testés sur une base de démo Docker.",
+          en: "Claude agents that work on a company's SQL Server database: ask a question in plain language and they answer with the real numbers, build reports with charts and change data. I wrote the MCP server that acts as the gatekeeper: every query is parsed with sqlglot, reads go through a read-only login, and every write follows preview, human approval and an audit log. Four specialised agents (analyst, reports, data steward, SQL reviewer), tested on a Docker demo database.",
+        },
+        ghLink: "https://github.com/baluva/company-sql-agents",
+        gallery: [
+          { src: companySql1, caption: { fr: "Architecture : les agents passent toujours par le serveur MCP", en: "Architecture: agents always go through the MCP server" } },
+          { src: companySql2, caption: { fr: "Une vraie exécution : deux agents data-analyst en parallèle", en: "A real run: two data-analyst agents in parallel" } },
+          { src: companySql3, caption: { fr: "Écriture : aperçu dans une transaction annulée avant tout accord", en: "Writes: preview in a rolled-back transaction before any approval" } },
+          { src: companySql4, caption: { fr: "Graphique généré par l'agent report-builder", en: "Chart produced by the report-builder agent" } },
         ],
       },
       {
