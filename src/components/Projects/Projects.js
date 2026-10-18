@@ -38,6 +38,7 @@ import magicAutos from "../../Assets/Projects/magic_autos.png";
 import soukBvmt from "../../Assets/Projects/souk_bvmt.png";
 import sawtna from "../../Assets/Projects/sawtna.png";
 import mapsProspector from "../../Assets/Projects/maps_prospector.jpg";
+import linkedinApply from "../../Assets/Projects/linkedin_apply.jpg";
 
 // Chaque carte a son titre et sa description en français et en anglais.
 // live: true = site réellement en ligne et utilisable (vérifié à la main).
@@ -301,6 +302,18 @@ const SECTIONS = [
           en: "A Python tool that finds French businesses without a website through the Google Places API, enriches their listings, then sends prospecting emails from Outlook and tracks the replies. Two-step pipeline (collect, then send), with a Streamlit dashboard to run the campaigns and an open tracker.",
         },
         ghLink: "https://github.com/baluva/maps-prospector",
+      },
+      {
+        imgPath: linkedinApply,
+        title: {
+          fr: "LinkedIn Apply — Bot de recherche d'alternance",
+          en: "LinkedIn Apply — Work-study job hunting bot",
+        },
+        description: {
+          fr: "Le bot qui a mené ma recherche d'alternance. Il postule aux offres LinkedIn « Candidature simplifiée » (Playwright), écarte ce qui n'est pas de la data ou de l'IA, et rédige pour chaque offre une lettre PDF adaptée à partir de mon CV. Un second module trouve des entreprises par code NAF et département, déniche leur email et envoie des candidatures spontanées depuis Outlook, puis suit les réponses. Il apprend de ses résultats : les mots-clés et les secteurs qui répondent passent en premier. 101 spontanées, environ 18 % de réponses.",
+          en: "The bot that ran my work-study job hunt. It applies to LinkedIn Easy Apply offers (Playwright), filters out anything that isn't data or AI, and writes a tailored PDF cover letter for each offer from my resume. A second module finds companies by industry code and area, digs up their email, sends unsolicited applications from Outlook and tracks the replies. It learns from its results: the keywords and sectors that answer go first. 101 unsolicited applications, about an 18% reply rate.",
+        },
+        ghLink: "https://github.com/baluva/linkedin-apply",
       },
       {
         imgPath: frostDays,
