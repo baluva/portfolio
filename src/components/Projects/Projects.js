@@ -44,6 +44,20 @@ import companySql2 from "../../Assets/Projects/company_sql_agents/09-execution-c
 import companySql3 from "../../Assets/Projects/company_sql_agents/03-apercu-ecriture.jpg";
 import companySql4 from "../../Assets/Projects/company_sql_agents/10-graphique-genere.jpg";
 
+import jungleTracker from "../../Assets/Projects/jungle_tracker.jpg";
+import jungle1 from "../../Assets/Projects/jungle_tracker/01_minimap_hud.jpg";
+import jungle2 from "../../Assets/Projects/jungle_tracker/02_hud.jpg";
+import jungle3 from "../../Assets/Projects/jungle_tracker/03_detection.jpg";
+import jungle4 from "../../Assets/Projects/jungle_tracker/04_review.jpg";
+import jungle5 from "../../Assets/Projects/jungle_tracker/05_coach.jpg";
+import clipup from "../../Assets/Projects/clipup.jpg";
+import tiktokStudio from "../../Assets/Projects/tiktok_studio.jpg";
+import instaHiggs from "../../Assets/Projects/insta_higgs.jpg";
+import canetterie from "../../Assets/Projects/canetterie.jpg";
+import pool3d from "../../Assets/Projects/pool_3d.jpg";
+import rakanSkin from "../../Assets/Projects/rakan_skin.jpg";
+import asheSkin from "../../Assets/Projects/ashe_skin.jpg";
+
 // Chaque carte a son titre et sa description en français et en anglais.
 // live: true = site réellement en ligne et utilisable (vérifié à la main).
 const SECTIONS = [
@@ -103,6 +117,57 @@ const SECTIONS = [
           { src: companySql3, caption: { fr: "Écriture : aperçu dans une transaction annulée avant tout accord", en: "Writes: preview in a rolled-back transaction before any approval" } },
           { src: companySql4, caption: { fr: "Graphique généré par l'agent report-builder", en: "Chart produced by the report-builder agent" } },
         ],
+      },
+      {
+        imgPath: jungleTracker,
+        title: {
+          fr: "Jungle Tracker — Vision par ordinateur sur League of Legends",
+          en: "Jungle Tracker — Computer vision on League of Legends",
+        },
+        description: {
+          fr: "Un outil perso pour progresser à League of Legends. Il lit la minimap à l'écran et la redessine nette sur un deuxième écran : position des champions, dernier endroit où le jungler adverse a été vu avec sa traînée, timers d'objectifs, CS face à l'adversaire de lane. Après la partie, il rejoue mon enregistrement et sort le trajet du jungler, une carte de chaleur et une chronologie. La détection mélange deux méthodes : une à moi (repérer les disques à anneau rouge ou bleu, puis reconnaître le visage du champion) et un modèle YOLO11 public (projet DeepestLeague) entraîné sur 170 champions. Évaluées sur 64 images d'une vraie partie vérifiées à l'œil : 93 % pour ma méthode, 95,5 % pour YOLO, 95,8 % en les combinant, en 17 ms par image sur une RTX 2050. Les infos de partie viennent uniquement de l'API officielle de Riot, sans lire la mémoire du jeu. Python, OpenCV, YOLO11, Tkinter.",
+          en: "A personal tool to get better at League of Legends. It reads the minimap on screen and redraws it sharply on a second monitor: champion positions, where the enemy jungler was last seen with their trail, objective timers, CS against the lane opponent. After the game, it replays my recording and outputs the jungler's path, a heatmap and a timeline. Detection combines two methods: my own (find the discs with a red or blue ring, then recognise the champion's face) and a public YOLO11 model (DeepestLeague project) trained on 170 champions. Evaluated on 64 frames of a real game checked by eye: 93% for my method, 95.5% for YOLO, 95.8% when combined, at 17 ms per frame on an RTX 2050. Game info comes only from Riot's official API, without reading game memory. Python, OpenCV, YOLO11, Tkinter.",
+        },
+        gallery: [
+          { src: jungle1, caption: { fr: "À gauche la minimap du jeu, à droite le HUD qui la redessine (jungler adverse, timers, zones)", en: "Left: the in-game minimap, right: the HUD redrawing it (enemy jungler, timers, areas)" } },
+          { src: jungle2, caption: { fr: "Le HUD du deuxième écran : objectifs, buissons à surveiller, vagues de sbires", en: "The second-screen HUD: objectives, bushes to watch, minion waves" } },
+          { src: jungle3, caption: { fr: "Détection image par image sur de vraies captures de minimap", en: "Frame-by-frame detection on real minimap captures" } },
+          { src: jungle4, caption: { fr: "Revue d'après-partie : trajet et carte de chaleur du jungler (test synthétique, 30/30 repérages)", en: "Post-game review: the jungler's path and heatmap (synthetic test, 30/30 sightings)" } },
+          { src: jungle5, caption: { fr: "La fenêtre coach : mes CS par minute comparés aux rythmes de chaque rang, conseils tirés de mes stats", en: "The coach window: my CS per minute against each rank's pace, tips from my own stats" } },
+        ],
+      },
+      {
+        imgPath: clipup,
+        title: {
+          fr: "ClipUp — Clips auto de lives GTA 6",
+          en: "ClipUp — Auto-clipping GTA 6 livestreams",
+        },
+        description: {
+          fr: "Un outil qui transforme des lives et VOD GTA 6 en clips verticaux 9:16 prêts à poster. Il télécharge la source, repère les temps forts (pics du chat, moments clés du jeu, réactions du streamer) grâce à une analyse IA de l'audio et de l'image, découpe, recadre en 9:16, sous-titre, pose la marque, puis publie sur TikTok, Reels, Shorts et X via WoopSocial — en français, anglais et japonais. Suivi des vues et likes par clip et par compte, file de rendu persistante, planning de publication et détection des moments les plus viraux. Projet mené avec Alexis. Python (FastAPI), ffmpeg, yt-dlp, Chrome DevTools Protocol.",
+          en: "A tool that turns GTA 6 livestreams and VODs into ready-to-post 9:16 vertical clips. It downloads the source, spots the highlights (chat spikes, key game moments, streamer reactions) with an AI analysis of audio and video, cuts, reframes to 9:16, adds subtitles and branding, then publishes to TikTok, Reels, Shorts and X through WoopSocial — in French, English and Japanese. Views and likes tracked per clip and per account, a persistent render queue, a publishing schedule and detection of the most viral moments. Built with Alexis. Python (FastAPI), ffmpeg, yt-dlp, Chrome DevTools Protocol.",
+        },
+      },
+      {
+        imgPath: tiktokStudio,
+        title: {
+          fr: "TikTok Studio — Publication et stats multi-comptes",
+          en: "TikTok Studio — Multi-account publishing and stats",
+        },
+        description: {
+          fr: "Un studio Python / Streamlit pour piloter plusieurs comptes TikTok : connexion OAuth officielle, publication de vidéos, et un dashboard qui agrège vues, likes, abonnés et taux d'engagement par compte et par période, avec le classement des meilleures vidéos. Il récupère aussi les vidéos publiques (yt-dlp avec impersonation Chrome via curl_cffi pour passer les protections de TikTok). Interface, file d'attente et stockage local.",
+          en: "A Python / Streamlit studio to run several TikTok accounts: official OAuth sign-in, video publishing, and a dashboard that aggregates views, likes, followers and engagement rate per account and per period, with a best-videos ranking. It also downloads public videos (yt-dlp with Chrome impersonation via curl_cffi to get past TikTok's protections). UI, job queue and local storage.",
+        },
+      },
+      {
+        imgPath: instaHiggs,
+        title: {
+          fr: "Insta × Higgsfield — Planche contact IA",
+          en: "Insta × Higgsfield — AI contact sheet",
+        },
+        description: {
+          fr: "Une appli Python / Streamlit qui génère des images et des Reels avec l'IA de Higgsfield (modèles Soul et Kling), les organise en planche contact, puis les publie sur Instagram via l'API officielle, avec le suivi des stats. Réglages des modèles, paramètres avancés en JSON et gestion de plusieurs comptes.",
+          en: "A Python / Streamlit app that generates images and Reels with Higgsfield's AI (Soul and Kling models), lays them out as a contact sheet, then publishes them to Instagram through the official API, with stats tracking. Model settings, advanced JSON parameters and multi-account management.",
+        },
       },
       {
         imgPath: wattcast,
@@ -368,6 +433,30 @@ const SECTIONS = [
         ghLink: "https://github.com/baluva/sawtna",
       },
       {
+        imgPath: canetterie,
+        title: {
+          fr: "Canetterie — Boutique de peluches",
+          en: "Canetterie — Plush shop",
+        },
+        description: {
+          fr: "Une boutique en ligne qui vend des peluches en forme de canette énergisante, avec un personnage mascotte en 3D qui tourne et marche à l'écran (Three.js), un sélecteur de couleurs, un panier et un tunnel de paiement Stripe. Design vert acide très marqué, typographie massive. React / Vite, déployé sur Cloudflare Pages.",
+          en: "An online shop selling plushies shaped like an energy drink can, with a 3D mascot that spins and walks on screen (Three.js), a colour picker, a cart and a Stripe checkout. Bold acid-green design, massive typography. React / Vite, deployed on Cloudflare Pages.",
+        },
+        demoLink: "https://canetterie.pages.dev",
+        live: true,
+      },
+      {
+        imgPath: pool3d,
+        title: {
+          fr: "Pool 3D — Billard en 3D",
+          en: "Pool 3D — 3D pool game",
+        },
+        description: {
+          fr: "Un jeu de billard en 3D dans le navigateur, avec une physique maison (collisions, frottement, effet) et trois modes : 8, 9 et 10 billes. Table de tournoi au drap bleu, choix du drap, parties à un ami ou contre l'ordinateur. Vite + Three.js, sans moteur de jeu.",
+          en: "A 3D pool game in the browser, with a hand-written physics engine (collisions, friction, spin) and three modes: 8, 9 and 10 ball. Tournament table with blue cloth, cloth colour choice, games against a friend or the computer. Vite + Three.js, no game engine.",
+        },
+      },
+      {
         imgPath: puissance4,
         title: { fr: "Puissance 4 Online", en: "Connect 4 Online" },
         description: {
@@ -423,6 +512,28 @@ const SECTIONS = [
           en: "Ynov × FACOM competition: giving a second life to a car diagnostic tool. Hardware reverse engineering of the SCANDIAG (a rebadged TEXA Laser Examiner): identified the STM32F429 microcontroller, the WT12 Bluetooth module and the FTDI serial bridge, established a Bluetooth SPP link as a proof of concept, then wrote a full reuse proposal. My first hardware project.",
         },
         ghLink: "https://github.com/baluva/scandiag-facom-reemploi",
+      },
+      {
+        imgPath: rakanSkin,
+        title: {
+          fr: "Mod League of Legends — Rakan « Zombie Weed »",
+          en: "League of Legends mod — Rakan \"Zombie Weed\"",
+        },
+        description: {
+          fr: "Un mod de skin custom pour Rakan dans League of Legends : retexturing du modèle, nouvel écran de chargement, effets visuels remplacés et animations rejouées (danses, provocations). Pipeline Python pour convertir et empaqueter les assets du jeu (.fantome via CSLoL), avec le piège classique des mipmaps à gérer sous ImageMagick.",
+          en: "A custom skin mod for Rakan in League of Legends: model retexturing, a new loading screen, swapped visual effects and reworked animations (dances, taunts). A Python pipeline converts and packages the game assets (.fantome via CSLoL), including the classic ImageMagick mipmap pitfall.",
+        },
+      },
+      {
+        imgPath: asheSkin,
+        title: {
+          fr: "Mod League of Legends — Ashe « PROJECT Émeraude »",
+          en: "League of Legends mod — Ashe \"PROJECT Emerald\"",
+        },
+        description: {
+          fr: "Un mod de skin pour Ashe : modèle recoloré en vert émeraude, arc inspiré de Varus Emerald, animations et monture empruntées à High Noon, effets visuels verts refaits. Script de build Python qui assemble le tout en .fantome (CSLoL) à partir des fichiers extraits du jeu.",
+          en: "A skin mod for Ashe: model recoloured in emerald green, a bow inspired by Varus Emerald, animations and a mount borrowed from High Noon, reworked green visual effects. A Python build script assembles everything into a .fantome (CSLoL) from the extracted game files.",
+        },
       },
     ],
   },
