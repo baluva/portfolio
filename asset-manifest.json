@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.2be9e94d.css",
-    "main.js": "/portfolio/static/js/main.27cdbde2.js",
+    "main.js": "/portfolio/static/js/main.f2e4a9e5.js",
     "static/js/415.4d6acbeb.chunk.js": "/portfolio/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/magic_autos.png": "/portfolio/static/media/magic_autos.dd13db7c11055aea58db.png",
-    "static/media/CV_Louey_Barbirou.pdf": "/portfolio/static/media/CV_Louey_Barbirou.e898e2929ea1cab3060b.pdf",
-    "static/media/CV_Louey_Barbirou_EN.pdf": "/portfolio/static/media/CV_Louey_Barbirou_EN.cb98bfc6d89fee36e77e.pdf",
+    "static/media/CV_Louey_Barbirou.pdf": "/portfolio/static/media/CV_Louey_Barbirou.0ed74a555a70c88b0177.pdf",
+    "static/media/CV_Louey_Barbirou_EN.pdf": "/portfolio/static/media/CV_Louey_Barbirou_EN.66507989119e5cf54957.pdf",
     "static/media/04_probleme.jpg": "/portfolio/static/media/04_probleme.d84c85367d32aa4b0957.jpg",
     "static/media/profile.jpg": "/portfolio/static/media/profile.9791a15f34d62a89efc8.jpg",
     "static/media/03_validation.jpg": "/portfolio/static/media/03_validation.d7e75e0de00b14cb462d.jpg",
@@ -51,24 +51,22 @@
     "static/media/videoinsight.jpg": "/portfolio/static/media/videoinsight.bf7bd82def8c5090ea1b.jpg",
     "static/media/heart_attack.png": "/portfolio/static/media/heart_attack.132a80430bcc4a047cb8.png",
     "static/media/10-graphique-genere.jpg": "/portfolio/static/media/10-graphique-genere.a04f1ba6832be941abe2.jpg",
-    "static/media/ashe_skin.jpg": "/portfolio/static/media/ashe_skin.1632f19f50e6f1804047.jpg",
     "static/media/red_rpg.jpg": "/portfolio/static/media/red_rpg.69654763a74368fae2e1.jpg",
     "static/media/ytech_docbase.jpg": "/portfolio/static/media/ytech_docbase.5345efa0e44c45fe9108.jpg",
     "static/media/wattcast.jpg": "/portfolio/static/media/wattcast.6b7240cfd2dda2b4d7f5.jpg",
     "static/media/05_coach.jpg": "/portfolio/static/media/05_coach.bee3e602142b816059cb.jpg",
     "static/media/crypto_tracker.jpg": "/portfolio/static/media/crypto_tracker.c6b6f1bff2b02f06b1b5.jpg",
     "static/media/04_review.jpg": "/portfolio/static/media/04_review.c9e23ef453dac1102636.jpg",
-    "static/media/rakan_skin.jpg": "/portfolio/static/media/rakan_skin.72c4511a4b1dd2ab2494.jpg",
     "static/media/pre.svg": "/portfolio/static/media/pre.4410c5baaa673cc131da.svg",
     "index.html": "/portfolio/index.html",
     "static/media/olist.svg": "/portfolio/static/media/olist.ede44484245418cf1cbe97bccd85bad7.svg",
     "main.2be9e94d.css.map": "/portfolio/static/css/main.2be9e94d.css.map",
-    "main.27cdbde2.js.map": "/portfolio/static/js/main.27cdbde2.js.map",
+    "main.f2e4a9e5.js.map": "/portfolio/static/js/main.f2e4a9e5.js.map",
     "415.4d6acbeb.chunk.js.map": "/portfolio/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2be9e94d.css",
-    "static/js/main.27cdbde2.js"
+    "static/js/main.f2e4a9e5.js"
   ]
 }
