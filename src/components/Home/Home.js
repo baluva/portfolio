@@ -33,7 +33,7 @@ function Home() {
                   <span className="arc-tag">
                     {t({ fr: "2 SEM. ENTREPRISE / 1 SEM. ÉCOLE", en: "2 WKS COMPANY / 1 WK SCHOOL" })}
                   </span>
-                  <span className="arc-tag">MARSEILLE / AIX</span>
+                  <span className="arc-tag">AIX-EN-PROVENCE</span>
                 </div>
               </Reveal>
 

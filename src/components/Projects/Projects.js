@@ -55,8 +55,6 @@ import tiktokStudio from "../../Assets/Projects/tiktok_studio.jpg";
 import instaHiggs from "../../Assets/Projects/insta_higgs.jpg";
 import canetterie from "../../Assets/Projects/canetterie.jpg";
 import pool3d from "../../Assets/Projects/pool_3d.jpg";
-import rakanSkin from "../../Assets/Projects/rakan_skin.jpg";
-import asheSkin from "../../Assets/Projects/ashe_skin.jpg";
 
 // Chaque carte a son titre et sa description en français et en anglais.
 // live: true = site réellement en ligne et utilisable (vérifié à la main).
@@ -512,28 +510,6 @@ const SECTIONS = [
           en: "Ynov × FACOM competition: giving a second life to a car diagnostic tool. Hardware reverse engineering of the SCANDIAG (a rebadged TEXA Laser Examiner): identified the STM32F429 microcontroller, the WT12 Bluetooth module and the FTDI serial bridge, established a Bluetooth SPP link as a proof of concept, then wrote a full reuse proposal. My first hardware project.",
         },
         ghLink: "https://github.com/baluva/scandiag-facom-reemploi",
-      },
-      {
-        imgPath: rakanSkin,
-        title: {
-          fr: "Mod League of Legends — Rakan « Zombie Weed »",
-          en: "League of Legends mod — Rakan \"Zombie Weed\"",
-        },
-        description: {
-          fr: "Un mod de skin custom pour Rakan dans League of Legends : retexturing du modèle, nouvel écran de chargement, effets visuels remplacés et animations rejouées (danses, provocations). Pipeline Python pour convertir et empaqueter les assets du jeu (.fantome via CSLoL), avec le piège classique des mipmaps à gérer sous ImageMagick.",
-          en: "A custom skin mod for Rakan in League of Legends: model retexturing, a new loading screen, swapped visual effects and reworked animations (dances, taunts). A Python pipeline converts and packages the game assets (.fantome via CSLoL), including the classic ImageMagick mipmap pitfall.",
-        },
-      },
-      {
-        imgPath: asheSkin,
-        title: {
-          fr: "Mod League of Legends — Ashe « PROJECT Émeraude »",
-          en: "League of Legends mod — Ashe \"PROJECT Emerald\"",
-        },
-        description: {
-          fr: "Un mod de skin pour Ashe : modèle recoloré en vert émeraude, arc inspiré de Varus Emerald, animations et monture empruntées à High Noon, effets visuels verts refaits. Script de build Python qui assemble le tout en .fantome (CSLoL) à partir des fichiers extraits du jeu.",
-          en: "A skin mod for Ashe: model recoloured in emerald green, a bow inspired by Varus Emerald, animations and a mount borrowed from High Noon, reworked green visual effects. A Python build script assembles everything into a .fantome (CSLoL) from the extracted game files.",
-        },
       },
     ],
   },
